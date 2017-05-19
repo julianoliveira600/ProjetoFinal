@@ -9,13 +9,18 @@ import java.util.List;
 
 public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
 
-    private static final String INSERT = "insert into Endereco(fk_idCidade, Rua, Bairro, CEP, Complemento, Numero, Cliente_id) values(?,?,?,?,?,?,?)";
+    private static final String INSERT_CLIENTE = "insert into Endereco(fk_idCidade, Rua, Bairro, CEP, Complemento, Numero, Cliente_id) values(?,?,?,?,?,?,?)";
+     private static final String INSERT_FUNCIONARIO = "insert into Endereco(fk_idCidade, Rua, Bairro, CEP, Complemento, Numero, fk_idFuncionario) values(?,?,?,?,?,?,?)";
 
     @Override
     public int insert(Endereco endereco) throws PersistenciaException {
         PreparedStatement insert = null;
         try {
-            insert = FabricaConexao.obterConexao().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS);
+            if(endereco.getCliente_id()!= null) {
+            insert = FabricaConexao.obterConexao().prepareStatement(INSERT_CLIENTE, Statement.RETURN_GENERATED_KEYS);
+            } else{
+               insert = FabricaConexao.obterConexao().prepareStatement(INSERT_FUNCIONARIO, Statement.RETURN_GENERATED_KEYS); 
+            }
             insert.setInt(1, endereco.getFk_idCidade());
             insert.setString(2, endereco.getRua());
             insert.setString(3, endereco.getBairro());

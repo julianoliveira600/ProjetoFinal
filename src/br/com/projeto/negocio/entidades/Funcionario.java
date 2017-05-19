@@ -12,7 +12,6 @@ public class Funcionario {
     private Date DataNascimento;
     private String RG;
     private int Status;
-    private Date DataAdmissao;
     private String Login;
     private String Senha;
     private String Telefone;
@@ -21,7 +20,7 @@ public class Funcionario {
     public Funcionario() {
     }
 
-    public Funcionario(int idFuncionario, String Nome, String CPF, String Email, String Funcao, Date DataNascimento, String RG, int Status, Date DataAdmissao, String Login, String Senha, String Telefone, String Celular) {
+    public Funcionario(int idFuncionario, String Nome, String CPF, String Email, String Funcao, Date DataNascimento, String RG, int Status, String Login, String Senha, String Telefone, String Celular) {
         this.idFuncionario = idFuncionario;
         this.Nome = Nome;
         this.CPF = CPF;
@@ -30,7 +29,6 @@ public class Funcionario {
         this.DataNascimento = DataNascimento;
         this.RG = RG;
         this.Status = Status;
-        this.DataAdmissao = DataAdmissao;
         this.Login = Login;
         this.Senha = Senha;
         this.Telefone = Telefone;
@@ -99,14 +97,6 @@ public class Funcionario {
 
     public void setStatus(int Status) {
         this.Status = Status;
-    }
-
-    public Date getDataAdmissao() {
-        return DataAdmissao;
-    }
-
-    public void setDataAdmissao(Date DataAdmissao) {
-        this.DataAdmissao = DataAdmissao;
     }
 
     public String getLogin() {

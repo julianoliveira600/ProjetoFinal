@@ -2,19 +2,20 @@ package br.com.projeto.negocio.entidades;
 
 public class Endereco {
 
-    private int idEndereco;
-    private int fk_idCidade;
+    public int idEndereco;
+    public int fk_idCidade;
     private String Rua;
     private String Bairro;
     private String CEP;
     private String Complemento;
     private int Numero;
     private int Cliente_id;
+    public int fk_idFuncionario;  // ver porque teve que deixar publica
 
     public Endereco() {
     }
 
-    public Endereco(int idEndereco, int fk_idCidade, String Rua, String Bairro, String CEP, String Complemento, int Numero, int Cliente_id) {
+    public Endereco(int idEndereco, int fk_idCidade, String Rua, String Bairro, String CEP, String Complemento, int Numero, int Cliente_id, int fk_idFuncionario) {
         this.idEndereco = idEndereco;
         this.fk_idCidade = fk_idCidade;
         this.Rua = Rua;
@@ -23,6 +24,7 @@ public class Endereco {
         this.Complemento = Complemento;
         this.Numero = Numero;
         this.Cliente_id = Cliente_id;
+        this.fk_idFuncionario = fk_idFuncionario;
     }
 
     public int getIdEndereco() {
@@ -88,6 +90,15 @@ public class Endereco {
     public void setCliente_id(int Cliente_id) {
         this.Cliente_id = Cliente_id;
     }
-    
+
+    public int getFk_idFuncionario() {
+        return fk_idFuncionario;
+    }
+
+    public void setFk_idFuncionario(int fk_idFuncionario) {
+        this.fk_idFuncionario = fk_idFuncionario;
+    }
+
+   
     
 }

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente>  {
 
-    private static final String INSERT = "insert into Cliente(nome, cpf, rg, dataNascimento,email) values(?,?,?,?,?)";
+    private static final String INSERT = "insert into Cliente(nome, cpf, rg, dataNascimento,email, Telefone, Celular) values(?,?,?,?,?,?,?)";
 
     @Override
     public int insert(Cliente cliente) throws PersistenciaException {
@@ -21,6 +21,8 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente>  {
             insert.setString(3, cliente.getRg());
             insert.setDate(4, cliente.getDataNascimento());
             insert.setString(5, cliente.getEmail());
+            insert.setString(6, cliente.getTelefone());
+            insert.setString(7, cliente.getCelular());
             insert.executeUpdate();
             return obterId(insert);
 
