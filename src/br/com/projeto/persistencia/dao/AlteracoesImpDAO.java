@@ -63,7 +63,7 @@ public class AlteracoesImpDAO extends BaseImpDAO implements BaseDAO<Alteracoes> 
     }
 
     @Override
-    public void edit(Alteracoes entidade) throws PersistenciaException {
+    public int edit(Alteracoes entidade) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

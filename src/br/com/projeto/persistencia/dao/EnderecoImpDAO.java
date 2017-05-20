@@ -44,7 +44,7 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
     }
 
     @Override
-    public void edit(Endereco endereco) throws PersistenciaException {
+    public int edit(Endereco endereco) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

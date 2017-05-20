@@ -42,7 +42,7 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente>  {
     }
 
     @Override
-    public void edit(Cliente cliente) throws PersistenciaException {
+    public int edit(Cliente cliente) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -50,5 +50,4 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente>  {
     public List<Cliente> list() throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
 }

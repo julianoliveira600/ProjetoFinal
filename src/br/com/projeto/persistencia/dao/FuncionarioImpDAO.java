@@ -49,7 +49,7 @@ public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario
     }
 
     @Override
-    public void edit(Funcionario entidade) throws PersistenciaException {
+    public int edit(Funcionario entidade) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
