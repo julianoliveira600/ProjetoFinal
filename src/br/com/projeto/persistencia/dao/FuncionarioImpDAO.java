@@ -10,8 +10,8 @@ import java.util.Set;
 
 public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario> {
 
-    private static final String INSERT = "insert into Funcionario(Nome, CPF, Email, Funcao, DataNascimento, RG, Status, DataAdmissao, Login, Senha) "
-            + "values(?,?,?,?,?,?,?,?,?,?)";
+    private static final String INSERT = "insert into Funcionario(Nome, CPF, Email, Funcao, DataNascimento, RG, Status, Login, Senha, Telefone, Celular)"
+            + "values(?,?,?,?,?,?,?,?,?,?,?)";
 
     @Override
     public int insert(Funcionario funcionario) throws PersistenciaException {
@@ -22,12 +22,13 @@ public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario
             insert.setString(2, funcionario.getCPF());
             insert.setString(3, funcionario.getEmail());
             insert.setString(4, funcionario.getFuncao());
-            insert.setDate(4, funcionario.getDataNascimento());
-            insert.setString(5, funcionario.getRG());
-            insert.setInt(6, funcionario.getStatus());
-            insert.setDate(7, funcionario.getDataAdmissao());
+            insert.setDate(5, funcionario.getDataNascimento());
+            insert.setString(6, funcionario.getRG());
+            insert.setInt(7, funcionario.getStatus());
             insert.setString(8, funcionario.getLogin());
             insert.setString(9, funcionario.getSenha());
+            insert.setString(10, funcionario.getTelefone());
+            insert.setString(11, funcionario.getCelular());
             insert.executeUpdate();
             return obterId(insert);
 
@@ -55,6 +56,11 @@ public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario
 
     @Override
     public List<Funcionario> list() throws PersistenciaException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Funcionario find(int id) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

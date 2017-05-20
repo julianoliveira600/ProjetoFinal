@@ -1,22 +1,23 @@
 
 package projetofinal;
 
-import br.com.projeto.controle.ClienteControle;
-import br.com.projeto.negocio.entidades.Cliente;
-import br.com.projeto.negocio.entidades.Endereco;
-
-import java.sql.Date;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import javax.swing.JOptionPane;
-
 
 public class ProjetoFinal {
 
-    public static void main(String[] args) throws ParseException {
+
+    public static void main(String[] args){
+        /**
+         * Teste Cliente
+         * 
+        */
         TestCliente testCliente = new TestCliente();
-        //testCliente.testInsert();
-        testCliente.testUpdate();
+        int id = testCliente.testInsert();
+        testCliente.testUpdate(id);
+        System.out.println("Listar");
+        testCliente.testList();
+        System.out.println("Visualizar");
+        testCliente.testView(id);
+        //TestFuncionario testFuncionario = new TestFuncionario();
+        //testFuncionario.testInsert();
     }  
 }

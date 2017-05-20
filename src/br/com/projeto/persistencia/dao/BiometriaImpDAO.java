@@ -66,4 +66,9 @@ public class BiometriaImpDAO extends BaseImpDAO implements BaseDAO<Biometria> {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    @Override
+    public Biometria find(int id) throws PersistenciaException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
