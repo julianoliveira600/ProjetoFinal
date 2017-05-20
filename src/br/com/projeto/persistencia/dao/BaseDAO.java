@@ -11,7 +11,9 @@ public interface BaseDAO<T>{
 
     public void remove(int id) throws PersistenciaException;
 
-    public void edit(T entidade) throws PersistenciaException;
+    public int edit(T entidade) throws PersistenciaException;
 
     public List<T> list() throws PersistenciaException;
+    
+    public T find(int id) throws PersistenciaException;
 }

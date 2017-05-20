@@ -91,12 +91,17 @@ public class AvaliacaoImpDao extends BaseImpDAO implements BaseDAO<Avaliacao> {
     }
 
     @Override
-    public void edit(Avaliacao entidade) throws PersistenciaException {
+    public int edit(Avaliacao entidade) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public List<Avaliacao> list() throws PersistenciaException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Avaliacao find(int id) throws PersistenciaException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

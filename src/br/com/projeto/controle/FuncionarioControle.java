@@ -16,7 +16,6 @@ public class FuncionarioControle {
             FuncionarioImpDAO funcionarioDAO = new FuncionarioImpDAO();
             EnderecoImpDAO enderecoDAO = new EnderecoImpDAO();
             int id = funcionarioDAO.insert(funcionario);
-            System.out.println(id);
             endereco.setFk_idFuncionario(id);
             int idEndereco = enderecoDAO.insert(endereco);
             con.commit();

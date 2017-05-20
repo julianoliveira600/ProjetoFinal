@@ -14,7 +14,10 @@ public class Cliente {
     private String email;
     private String Telefone;
     private String Celular;
-
+    private Endereco endereco;
+    private Biometria biometria;
+    private Alteracoes alteracoes;
+    
     public Cliente() {
     }    
 
@@ -92,8 +95,28 @@ public class Cliente {
     public void setCelular(String Celular) {
         this.Celular = Celular;
     }
+    
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
-   
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }  
     
-    
+    public Biometria getBiometria() {
+        return biometria;
+    }
+
+    public void setBiometria(Biometria biometria) {
+        this.biometria = biometria;
+    }
+
+    public Alteracoes getAlteracoes() {
+        return alteracoes;
+    }
+
+    public void setAlteracoes(Alteracoes alteracoes) {
+        this.alteracoes = alteracoes;
+    }
 }

@@ -16,6 +16,7 @@ public class Funcionario {
     private String Senha;
     private String Telefone;
     private String Celular;
+    private Endereco endereco;
 
     public Funcionario() {
     }
@@ -130,6 +131,12 @@ public class Funcionario {
     public void setCelular(String Celular) {
         this.Celular = Celular;
     }
+    
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
-   
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    } 
 }
