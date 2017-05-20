@@ -43,7 +43,7 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente>  {
 
     @Override
     public int edit(Cliente cliente) throws PersistenciaException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
