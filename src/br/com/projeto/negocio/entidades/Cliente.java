@@ -1,21 +1,34 @@
 package br.com.projeto.negocio.entidades;
 
+import br.com.projeto.persistencia.validacao.Campo;
+import br.com.projeto.persistencia.validacao.Chave;
 import java.sql.Date;
 
 
 
 public class Cliente extends Entidade {
 
-    private int id;																				 
-    private String nome;																		
-    private String cpf;																			
-    private String rg;																				
-    private Date dataNascimento;																				
+    @Campo(tamanho = 10, requerido = true)
+    private int id;
+    @Campo(tamanho = 50, requerido = true)
+    private String nome;
+    @Campo(tamanho = 11, requerido = true)
+    private String cpf;	
+    @Campo(tamanho = 25, requerido = true)
+    private String rg;	
+    
+    private Date dataNascimento;
+    @Campo(tamanho = 50, requerido = true, formato = "[a-z0-9._-]+@[a-z.]+")
     private String email;
+    @Campo(tamanho = 10, requerido = true, formato = "^[0-9]{8,10}$")
     private String Telefone;
+    @Campo(tamanho = 12, requerido = true)
     private String Celular;
+    @Chave(requerido = true)
     private Endereco endereco;
+    @Chave(requerido = false)
     private Biometria biometria;
+    @Chave( requerido = false)
     private Alteracoes alteracoes;
     
     public Cliente() {
@@ -31,7 +44,7 @@ public class Cliente extends Entidade {
         this.Telefone = Telefone;
         this.Celular = Celular;
     }
-
+    
     public int getId() {
         return id;
     }

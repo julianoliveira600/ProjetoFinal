@@ -26,7 +26,7 @@ public class TestCliente {
     public int testInsert(){
         ClienteControle cc = new ClienteControle();
         Cliente cliente = new Cliente();
-        cliente.setNome("Vinicius");
+        cliente.setNome("Vinicius Da Silva Sauro Lopes");
         cliente.setCpf("06118077932");
         cliente.setEmail("viniciusbord9@gmail.com");
         cliente.setRg("92666573");
