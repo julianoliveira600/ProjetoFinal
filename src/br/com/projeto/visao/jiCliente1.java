@@ -16,6 +16,7 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ComboBoxModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -442,8 +443,19 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jtCelularFocusLost
 
     private void jbCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCadastrarActionPerformed
-        clienteControle.adicionar(this.cliente);
-        limparCampos();
+        this.cliente.setEndereco(this.endereco);
+        if(this.cliente.valida()){
+            clienteControle.adicionar(this.cliente);
+            limparCampos();
+        }else{
+            StringBuilder mens = new StringBuilder();
+            for(String mensagem : this.cliente.obterMensagens()){
+                mens.append(mensagem);
+                mens.append("\n");
+            }
+            JOptionPane.showMessageDialog(null, mens);
+            this.cliente.limparMensagens();
+        }
     }//GEN-LAST:event_jbCadastrarActionPerformed
 
     private void jComboBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jComboBox2PropertyChange
