@@ -52,6 +52,7 @@ public class TestCliente {
         cliente.setEndereco(endereco);
       
         cc.adicionar(cliente);
+        cliente.obterMensagens();
         return cliente.getId();
     }
     

@@ -46,7 +46,8 @@ public class TestFuncionario {
         endereco.setFk_idCidade(3);
         endereco.setNumero(496);
         endereco.setRua("Rua Das Dálias");
-      
-        fc.adicionar(funcionario, endereco);
+        
+        funcionario.setEndereco(endereco);
+        fc.adicionar(funcionario);
     }
 }
