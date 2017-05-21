@@ -8,8 +8,6 @@ package projetofinal;
 import br.com.projeto.controle.ClienteControle;
 import br.com.projeto.negocio.entidades.Cliente;
 import br.com.projeto.negocio.entidades.Endereco;
-import br.com.projeto.persistencia.dao.EnderecoImpDAO;
-import br.com.projeto.persistencia.exception.PersistenciaException;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -51,8 +49,9 @@ public class TestCliente {
         endereco.setFk_idCidade(3);
         endereco.setNumero(752);
         endereco.setRua("Xavantes");
+        cliente.setEndereco(endereco);
       
-        cc.adicionar(cliente, endereco);
+        cc.adicionar(cliente);
         return cliente.getId();
     }
     
@@ -83,7 +82,9 @@ public class TestCliente {
         endereco.setFk_idCidade(3);
         endereco.setNumero(777);
         endereco.setRua("Lisboa");
-        cc.atualizar(cliente, endereco); 
+        
+        cliente.setEndereco(endereco);
+        cc.atualizar(cliente); 
     }
     
     public void testList(){

@@ -4,7 +4,7 @@ import java.sql.Date;
 
 
 
-public class Cliente {
+public class Cliente extends Entidade {
 
     private int id;																				 
     private String nome;																		

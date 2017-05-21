@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Biometria {
+public class Biometria extends Entidade {
 
     private int idBiometria;
     private float Bracodir;

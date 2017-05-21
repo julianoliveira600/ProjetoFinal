@@ -2,7 +2,7 @@ package br.com.projeto.negocio.entidades;
 
 import java.sql.Date;
 
-public class Funcionario {
+public class Funcionario extends Entidade {
 
     private int idFuncionario;
     private String Nome;

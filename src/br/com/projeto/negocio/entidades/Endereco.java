@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Endereco {
+public class Endereco extends Entidade {
 
     public int idEndereco;
     public int fk_idCidade;
