@@ -14,23 +14,24 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ClienteControle {
+public class ClienteControle implements BaseControle<Cliente> {
     
     
     private List<String> messages = new ArrayList<String>();
 
-    public void adicionar(Cliente cliente, Endereco endereco) {
+    @Override
+    public void adicionar(Cliente entidade) {
         Connection con = FabricaConexao.obterConexao();
         try {
             con.setAutoCommit(false);
             ClienteImpDAO clienteDao = new ClienteImpDAO();
             EnderecoImpDAO enderecoDAO = new EnderecoImpDAO();
-            int id = clienteDao.insert(cliente); // insere cliente
-            endereco.setCliente_id(id); //seta o id do cliente no endereço
-            int idEndereco = enderecoDAO.insert(endereco); //insere endereço
+            int id = clienteDao.insert(entidade); // insere cliente
+            entidade.getEndereco().setCliente_id(id); //seta o id do cliente no endereço
+            int idEndereco = enderecoDAO.insert(entidade.getEndereco()); //insere endereço
             con.commit(); // se nenhum dos inserts der errado comita*
         } catch (SQLException ex) {
-            messages.add("Não foi possível inserir cliente.");
+            entidade.adicionarMensagem(ex.getMessage());
             try {
                 con.rollback(); // se algum insert der errado, rollback e não insere nada
             } catch (SQLException ex1) {
@@ -38,6 +39,7 @@ public class ClienteControle {
             }
             Logger.getLogger(ClienteControle.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PersistenciaException ex) {
+            entidade.adicionarMensagem(ex.getMessage());
             try {
                 con.rollback();
             } catch (SQLException ex1) {
@@ -51,23 +53,24 @@ public class ClienteControle {
                 Logger.getLogger(ClienteControle.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
     }
 
-    public void atualizar(Cliente cliente, Endereco endereco) {
+    @Override
+    public void atualizar(Cliente entidade) {
         Connection con = FabricaConexao.obterConexao();
         try {
             con.setAutoCommit(false);
             ClienteImpDAO clienteDao = new ClienteImpDAO();
             EnderecoImpDAO enderecoDAO = new EnderecoImpDAO();
-            int id = clienteDao.edit(cliente);
-            Endereco enderecoAntigo = enderecoDAO.findByCliente(cliente.getId());
-            endereco.setCliente_id(id);
-            endereco.setIdEndereco(enderecoAntigo.getIdEndereco());
-            int idEndereco = enderecoDAO.edit(endereco);
+            int id = clienteDao.edit(entidade);
+            Endereco enderecoAntigo = enderecoDAO.findByCliente(entidade.getId());
+            entidade.getEndereco().setCliente_id(id);
+            entidade.getEndereco().setIdEndereco(enderecoAntigo.getIdEndereco());
+            int idEndereco = enderecoDAO.edit(entidade.getEndereco());
             con.commit();
 
         } catch (SQLException ex) {
+            entidade.adicionarMensagem(ex.getMessage());
             try {
                 con.rollback();
             } catch (SQLException ex1) {
@@ -75,6 +78,7 @@ public class ClienteControle {
             }
             Logger.getLogger(ClienteControle.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PersistenciaException ex) {
+            entidade.adicionarMensagem(ex.getMessage());
             try {
                 con.rollback();
             } catch (SQLException ex1) {
@@ -90,6 +94,7 @@ public class ClienteControle {
         }
     }
     
+    @Override
     public List<Cliente> listar(){
         List<Cliente> clientes = new ArrayList<Cliente>();
         try{
@@ -102,6 +107,7 @@ public class ClienteControle {
         return clientes;
     }
     
+    @Override
     public Cliente visualizar(int id){
         Cliente cliente = new Cliente();
         try{
@@ -109,9 +115,9 @@ public class ClienteControle {
             cliente = clienteDAO.find(id);
             return cliente;
         } catch (PersistenciaException ex) {
+            cliente.adicionarMensagem(ex.getMessage());
             Logger.getLogger(ClienteControle.class.getName()).log(Level.SEVERE, null, ex);
         }
         return cliente;
-    }
-   
+    }   
 }

@@ -442,7 +442,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jtCelularFocusLost
 
     private void jbCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCadastrarActionPerformed
-        clienteControle.adicionar(this.cliente, this.endereco);
+        clienteControle.adicionar(this.cliente);
         limparCampos();
     }//GEN-LAST:event_jbCadastrarActionPerformed
 

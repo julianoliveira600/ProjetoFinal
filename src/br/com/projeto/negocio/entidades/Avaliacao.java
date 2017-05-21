@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Avaliacao {
+public class Avaliacao extends Entidade {
 
     private int idAvaliacao;
     private int CorPele;

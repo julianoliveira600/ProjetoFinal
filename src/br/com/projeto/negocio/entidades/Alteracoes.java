@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Alteracoes {
+public class Alteracoes extends Entidade {
 
     private int idClienteAlteracoes;
     private boolean Cardiaca;

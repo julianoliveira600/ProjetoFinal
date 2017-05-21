@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Cidade {
+public class Cidade extends Entidade {
 
     private int idCidade;
     private String Nome;

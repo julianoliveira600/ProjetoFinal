@@ -1,6 +1,6 @@
 package br.com.projeto.negocio.entidades;
 
-public class Estado {
+public class Estado extends Entidade {
 
     private int idEstado;
     private String Nome;
