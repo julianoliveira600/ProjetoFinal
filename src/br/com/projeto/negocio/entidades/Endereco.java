@@ -10,7 +10,7 @@ public class Endereco extends Entidade {
     private String Complemento;
     private int Numero;
     private int Cliente_id;
-    public int fk_idFuncionario;  // ver porque teve que deixar publica
+    private int fk_idFuncionario;  // ver porque teve que deixar publica
 
     public Endereco() {
     }

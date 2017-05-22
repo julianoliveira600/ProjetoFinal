@@ -4,8 +4,6 @@ import br.com.projeto.persistencia.validacao.Campo;
 import br.com.projeto.persistencia.validacao.Chave;
 import java.sql.Date;
 
-
-
 public class Cliente extends Entidade {
 
     @Campo(tamanho = 10, requerido = true)
@@ -13,10 +11,10 @@ public class Cliente extends Entidade {
     @Campo(tamanho = 50, requerido = true)
     private String nome;
     @Campo(tamanho = 11, requerido = true)
-    private String cpf;	
+    private String cpf;
     @Campo(tamanho = 25, requerido = true)
-    private String rg;	
-    
+    private String rg;
+
     private Date dataNascimento;
     @Campo(tamanho = 50, requerido = true, formato = "[a-z0-9._-]+@[a-z.]+")
     private String email;
@@ -28,11 +26,12 @@ public class Cliente extends Entidade {
     private Endereco endereco;
     @Chave(requerido = false)
     private Biometria biometria;
-    @Chave( requerido = false)
+    @Chave(requerido = false)
     private Alteracoes alteracoes;
-    
+    private Avaliacao avaliacao;
+
     public Cliente() {
-    }    
+    }
 
     public Cliente(int id, String nome, String cpf, String rg, Date dataNascimento, String email, String Telefone, String Celular) {
         this.id = id;
@@ -43,8 +42,9 @@ public class Cliente extends Entidade {
         this.email = email;
         this.Telefone = Telefone;
         this.Celular = Celular;
+
     }
-    
+
     public int getId() {
         return id;
     }
@@ -108,15 +108,15 @@ public class Cliente extends Entidade {
     public void setCelular(String Celular) {
         this.Celular = Celular;
     }
-    
+
     public Endereco getEndereco() {
         return endereco;
     }
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }  
-    
+    }
+
     public Biometria getBiometria() {
         return biometria;
     }
@@ -132,4 +132,13 @@ public class Cliente extends Entidade {
     public void setAlteracoes(Alteracoes alteracoes) {
         this.alteracoes = alteracoes;
     }
+
+    public Avaliacao getAvaliacao() {
+        return avaliacao;
+    }
+
+    public void setAvaliacao(Avaliacao avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+
 }

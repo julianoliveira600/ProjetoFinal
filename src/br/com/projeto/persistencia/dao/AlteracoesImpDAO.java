@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 public class AlteracoesImpDAO extends BaseImpDAO implements BaseDAO<Alteracoes> {
 
-    private static final String INSERT = "insert into Alteracoes(Cardiaca, Vasculares, Reumaticas, Renais, Glandulares, Ginecologicas, Proteses, Bronquite, Alergias, Usadiu, PressaoMembros, Constipacao, TratamentoMedico, UsaMedicamentos, Gestante, Marcapasso, Eplepsia, Ancologia, ProtecaoPele, Diabetes, Observacoes, Cliente_id )"
+    private static final String INSERT = "insert into ClienteAlteracoes(Cardiaca, Vasculares, Reumaticas, Renais, Glandulares, Ginecologicas, Proteses, Bronquite, Alegias, Usadiu, PressaoMembros, Constipacao, TratamentoMedico, UsaMedicamentos, Gestante, Marcapasso, Eplepsia, Ancologia, ProtecaoPele, Diabetes, Observacoes, Cliente_id )"
             + " values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     @Override
@@ -20,26 +20,26 @@ public class AlteracoesImpDAO extends BaseImpDAO implements BaseDAO<Alteracoes> 
         PreparedStatement insert = null;
         try {
             insert = FabricaConexao.obterConexao().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS);
-            insert.setBoolean(1, false);
-            insert.setBoolean(2, false);
-            insert.setBoolean(3, false);
-            insert.setBoolean(4, false);
-            insert.setBoolean(5, false);
-            insert.setBoolean(6, false);
-            insert.setBoolean(7, false);
-            insert.setBoolean(8, false);
-            insert.setBoolean(9, false);
-            insert.setBoolean(10, false);
-            insert.setBoolean(11, false);
-            insert.setBoolean(12, false);
-            insert.setBoolean(13, false);
-            insert.setBoolean(14, false);
-            insert.setBoolean(15, false);
-            insert.setBoolean(16, false);
-            insert.setBoolean(17, false);
-            insert.setBoolean(18, false);
-            insert.setBoolean(19, false);
-            insert.setBoolean(20, false);
+            insert.setByte(1, (byte)0);
+            insert.setByte(2, (byte)0);
+            insert.setByte(3, (byte)0);
+            insert.setByte(4, (byte)0);
+            insert.setByte(5, (byte)0);
+            insert.setByte(6, (byte)0);
+            insert.setByte(7, (byte)0);
+            insert.setByte(8, (byte)0);
+            insert.setByte(9, (byte)0);
+            insert.setByte(10, (byte)0);
+            insert.setByte(11, (byte)0);
+            insert.setByte(12, (byte)0);
+            insert.setByte(13, (byte)0);
+            insert.setByte(14, (byte)0);
+            insert.setByte(15, (byte)0);
+            insert.setByte(16, (byte)0);
+            insert.setByte(17, (byte)0);
+            insert.setByte(18, (byte)0);
+            insert.setByte(19, (byte)0);
+            insert.setByte(20, (byte)0);
             insert.setString(21, alteracoes.getObservacoes());
             insert.setInt(22, alteracoes.getCliente_id());
             insert.executeUpdate();

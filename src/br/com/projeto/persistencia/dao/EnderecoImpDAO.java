@@ -16,6 +16,7 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
     private static final String SELECT_ID = "SELECT * FROM ENDERECO WHERE id = ?";
     private static final String SELECT_CLIENTE = "SELECT * FROM ENDERECO WHERE Cliente_id = ?";
     private static final String UPDATE_CLIENTE = "UPDATE ENDERECO SET fk_idCidade= ?,  Rua = ?, Bairro = ?, CEP = ?, Complemento = ? , Numero = ?,  Cliente_id = ? where idEndereco =  ?";
+    private static final String SELECT_FUNCIONARIO = "SELECT * FROM ENDERECO WHERE fk_idFuncionario = ?";
     private static final String UPDATE_FUNCIONARIO = "UPDATE ENDERECO SET fk_idCidade= ?,  Rua = ?, Bairro = ?, CEP = ?, Complemento = ? , Numero = ?,  fk_idFuncionario = ? where idEndereco =  ?";
 
     @Override
@@ -106,7 +107,7 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
         try {
             select = FabricaConexao.obterConexao().prepareStatement(SELECT_ID);
             select.setInt(1, id);
-            ResultSet rs = select.executeQuery();            
+            ResultSet rs = select.executeQuery();
             Endereco endereco = new Endereco();
             while (rs.next()) {
                 endereco.setIdEndereco(rs.getInt(1));
@@ -119,13 +120,12 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
                 endereco.setCliente_id(rs.getInt(8));
             }
             return endereco;
-        }catch (Exception e) { 
+        } catch (Exception e) {
             e.printStackTrace();
             throw new PersistenciaException("Erro ao carregar o cliente");
         }
     }
-    
-    
+
     public Endereco findByCliente(int idCliente) throws PersistenciaException {
         PreparedStatement select = null;
         try {
@@ -144,9 +144,33 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
                 endereco.setCliente_id(rs.getInt(8));
             }
             return endereco;
-        }catch (Exception e) { 
+        } catch (Exception e) {
             e.printStackTrace();
             throw new PersistenciaException("Erro ao carregar o cliente");
+        }
+    }
+
+    public Endereco findByFuncionario(int idFuncionario) throws PersistenciaException {
+        PreparedStatement select = null;
+        try {
+            select = FabricaConexao.obterConexao().prepareStatement(SELECT_FUNCIONARIO);
+            select.setInt(1, idFuncionario);
+            ResultSet rs = select.executeQuery();
+            Endereco endereco = new Endereco();
+            while (rs.next()) {
+                endereco.setIdEndereco(rs.getInt(1));
+                endereco.setFk_idCidade(rs.getInt(2));
+                endereco.setRua(rs.getString(3));
+                endereco.setBairro(rs.getString(4));
+                endereco.setCEP(rs.getString(5));
+                endereco.setComplemento(rs.getString(6));
+                endereco.setNumero(rs.getInt(7));
+                endereco.setFk_idFuncionario(rs.getInt(8));
+            }
+            return endereco;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new PersistenciaException("Erro ao carregar o Funcionario");
         }
     }
 

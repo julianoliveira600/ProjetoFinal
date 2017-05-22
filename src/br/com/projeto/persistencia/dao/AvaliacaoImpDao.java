@@ -9,7 +9,7 @@ import java.util.List;
 
 public class AvaliacaoImpDao extends BaseImpDAO implements BaseDAO<Avaliacao> {
 
-    private static final String INSERT = "insert into Avaliacao(CorPele, AparenciaPele, SuperficiePele, LesoesPele, BiotipoCultaneo, Acne, Flacidez, Desidratacao, Milium, Copuperose, Telangiectasia, Efelidez, Xantelasma, Rugas,Rosacea, Seborreia, Foliculite,Cicatriz, VerrugasPintas, Acromia, Cloasma, Hipercromia, Hipocromia, Angioma, Eritema, Petequias, Cianose, Hematoma, Ceratose, Papulas, Comedao, Necrose, Nodulos, Bolhas, Pustulas, Vesicula, Crosta, Escara, Fisura, Ulceracao, Descamacao, Escoriacao, Fistula, Atrofia, Hipertricose, Hirsutismo, Eczema, Hiperqueratose, Psoriase, OleosidadePele, Espessura, Observacoes, Cliente_id)"
+    private static final String INSERT = "insert into Avaliacao(CorPele, AparenciaPele, SuperficiePele, LesoePele, BiotipoCultaneo, Acne, Flacidez, Desidratacao, Milium, Copuperose, Telangiectasia, Efelidez, Xantelasma, Rugas,Rosacea, Seborreia, Foliculite,Cicatriz, VerrugasPintas, Acromia, Cloasma, Hipercromia, Hipocromia, Angioma, Eritema, Petequias, Cianose, Hematoma, Ceratose, Papulas, Comedao, Necrose, Nodulos, Bolhas, Pustulas, Vesicula, Crosta, Escara, Fisura, Ulceracao, Descamacao, Escoriacao, Fistula, Atrofia, Hipertricose, Hirsutismo, Eczema, Hiperqueratose, Psoriase, OleosidadePele, Espessura, Observacoes, Cliente_id)"
             + "values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     @Override
