@@ -1,8 +1,14 @@
 package br.com.projeto.negocio.entidades;
 
-public class Estado extends Entidade {
+import br.com.projeto.persistencia.validacao.Campo;
+import br.com.projeto.persistencia.validacao.Tabela;
 
+@Tabela(nome="ESTADO")
+public class Estado extends Entidade {
+    
+    @Campo(nome="idEstado", isId = true, tamanho = 10, requerido = true)
     private int idEstado;
+    @Campo(nome="Nome", tamanho = 2, requerido = true)
     private String Nome;
 
     public Estado() {

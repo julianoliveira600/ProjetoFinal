@@ -1,29 +1,56 @@
 package br.com.projeto.negocio.entidades;
 
+import br.com.projeto.persistencia.validacao.Campo;
+import br.com.projeto.persistencia.validacao.Tabela;
+
+@Tabela(nome="CLIENTEALTERACOES")
 public class Alteracoes extends Entidade {
 
+    @Campo(nome="idClienteAlteracoes", isId = true, tamanho = 10, requerido = true)
     private int idClienteAlteracoes;
+    @Campo(nome="Cardiaca", tamanho = 1, requerido = true)
     private boolean Cardiaca;
+    @Campo(nome="Vasculares", tamanho = 1, requerido = true)
     private boolean Vasculares;
+    @Campo(nome="Reumaticas", tamanho = 1, requerido = true)
     private boolean Reumaticas;
+    @Campo(nome="Renais", tamanho = 1, requerido = true)
     private boolean Renais;
+    @Campo(nome="Glandulares", tamanho = 1, requerido = true)
     private boolean Glandulares;
+    @Campo(nome="Ginecologicas", tamanho = 1, requerido = true)
     private boolean Ginecologicas;
+    @Campo(nome="Proteses", tamanho = 1, requerido = true)
     private boolean Proteses;
+    @Campo(nome="Bronquite", tamanho = 1, requerido = true)
     private boolean Bronquite;
+    @Campo(nome="Alegias", tamanho = 1, requerido = true)
     private boolean Alergias;
+    @Campo(nome="Usadiu", tamanho = 1, requerido = true)
     private boolean Usadiu;
+    @Campo(nome="PressaoMembros", tamanho = 1, requerido = true)
     private boolean PressaoMembros;
+    @Campo(nome="Constipacao", tamanho = 1, requerido = true)
     private boolean Constipacao;
+    @Campo(nome="TratamentoMedico", tamanho = 1, requerido = true)
     private boolean TratamentoMedico;
+    @Campo(nome="UsaMedicamentos", tamanho = 1, requerido = true)
     private boolean UsaMedicamentos;
+    @Campo(nome="Gestante", tamanho = 1, requerido = true)
     private boolean Gestante;
+    @Campo(nome="Marcapasso", tamanho = 1, requerido = true)
     private boolean Marcapasso;
+    @Campo(nome="Eplepsia", tamanho = 1, requerido = true)
     private boolean Eplepsia;
+    @Campo(nome="Ancologia", tamanho = 1, requerido = true)
     private boolean Ancologia;
+    @Campo(nome="ProtecaoPele", tamanho = 1, requerido = true)
     private boolean ProtecaoPele;
+    @Campo(nome="Diabetes", tamanho = 1, requerido = true)
     private boolean Diabetes;
+    @Campo(nome="Observacoes", tamanho = 11, requerido = true)
     private String Observacoes;
+    @Campo(nome="Cliente_id", tamanho = 11, requerido = true)
     private int Cliente_id;
 
     public Alteracoes() {

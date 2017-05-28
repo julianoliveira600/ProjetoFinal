@@ -1,10 +1,29 @@
 package br.com.projeto.negocio.entidades;
 
-public class Cidade extends Entidade {
+import br.com.projeto.persistencia.validacao.Campo;
+import br.com.projeto.persistencia.validacao.Chave;
+import br.com.projeto.persistencia.validacao.Tabela;
 
+@Tabela(nome="CIDADE")
+public class Cidade extends Entidade {
+    
+    @Campo(nome="idCidade", isId = true, tamanho = 10, requerido = true)
     private int idCidade;
+    @Campo(nome="Nome", tamanho = 45, requerido = true)
     private String Nome;
+    @Campo(nome="fk_idEstado", tamanho = 10, requerido = true)
     private int fk_idEstado;
+    @Chave(campo="fk_idEstado", fk=true , requerido= true)
+    private Estado estado;
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+    
 
     public Cidade() {
     }
