@@ -10,5 +10,7 @@ import java.lang.annotation.Target;
 public @interface Chave {
     
     boolean requerido(); 
+    String campo();
+    boolean fk() default false;
     String mensagemRequerido() default "O Chave não pode ser vazio: ";
 }

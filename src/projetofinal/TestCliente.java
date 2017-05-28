@@ -75,7 +75,7 @@ public class TestCliente {
         alteracoes.setAncologia(true);
         alteracoes.setProtecaoPele(true);
         alteracoes.setDiabetes(true);
-        alteracoes.setObservacoes("");
+        alteracoes.setObservacoes("Observação Alteração");
         cliente.setAlteracoes(alteracoes);
 
         ////// inserindo Avaliacao/////////
@@ -131,7 +131,7 @@ public class TestCliente {
         avaliacao.setPsoariase(true);
         avaliacao.setOleosidadePele(1);
         avaliacao.setEspessura(0);
-        avaliacao.setObservacoes("");
+        avaliacao.setObservacoes("Observação Avaliação");
 
         ///////////////// Inserindo Biometria ///////////////
         Biometria biometria = new Biometria();
@@ -312,9 +312,11 @@ public class TestCliente {
         ClienteControle cc = new ClienteControle();
         Cliente cliente = cc.visualizar(id);
         System.out.println(cliente.getId() + ":" + cliente.getNome());
-        System.out.println(cliente.getEndereco().getIdEndereco() + ":" + cliente.getEndereco().getCEP());
+        System.out.println(" Cidade:" + cliente.getEndereco().getCidade().getNome() +"Estado:"+cliente.getEndereco().getCidade().getEstado().getNome());
         System.out.println(cliente.getAlteracoes().getObservacoes());
-        System.out.println(cliente.getAvaliacao().getAcne() + ":" + cliente.getAvaliacao().getDesidratacao());
-        System.out.println(cliente.getBiometria().getCoxaesq() + ":" + cliente.getBiometria().getCintura());
+        //fazer anotações em avaliação entidade
+        //System.out.println(cliente.getAvaliacao().getAcne() + ":" + cliente.getAvaliacao().getDesidratacao());
+        //fazer anotação em biometria entidade
+        //System.out.println(cliente.getBiometria().getCoxaesq() + ":" + cliente.getBiometria().getCintura());
     }
 }

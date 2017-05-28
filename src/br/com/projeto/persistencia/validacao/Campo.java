@@ -11,6 +11,8 @@ import java.lang.annotation.Target;
 public @interface Campo {
     
     int tamanho();
+    String nome();
+    boolean isId() default false;
     boolean requerido();
     String formato() default "";
     String mensagemTamanho() default "Não foi possível salva o campo: ";

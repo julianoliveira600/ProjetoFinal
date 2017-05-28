@@ -10,11 +10,11 @@ public class ProjetoFinal {
         TestCliente testCliente = new TestCliente();
 //        int id = testCliente.testInsert();
 //        testCliente.testUpdate(3);
-//        System.out.println("Listar");
-//        testCliente.testList();
-//        System.out.println("Visualizar");
-          testCliente.testView(31);
-//            testCliente.testInsert();
+        System.out.println("Listar");
+        testCliente.testList();
+        System.out.println("Visualizar");
+        testCliente.testView(2);
+            //testCliente.testInsert();
            /**
          * Teste Cliente
          * 

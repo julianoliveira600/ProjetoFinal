@@ -1,16 +1,40 @@
 package br.com.projeto.negocio.entidades;
 
-public class Endereco extends Entidade {
+import br.com.projeto.persistencia.validacao.Campo;
+import br.com.projeto.persistencia.validacao.Chave;
+import br.com.projeto.persistencia.validacao.Tabela;
 
+@Tabela(nome="ENDERECO")
+public class Endereco extends Entidade {
+    
+    @Campo(nome="idEndereco", isId = true, tamanho = 10, requerido = true)
     public int idEndereco;
+    @Campo(nome="fk_idCidade", tamanho = 10, requerido = true)
     public int fk_idCidade;
+    @Campo(nome="Rua", tamanho = 10, requerido = true)
     private String Rua;
+    @Campo(nome="Bairro", tamanho = 10, requerido = true)
     private String Bairro;
+    @Campo(nome="CEP", tamanho = 10, requerido = true)
     private String CEP;
+    @Campo(nome="Complemento", tamanho = 30, requerido = true)
     private String Complemento;
+    @Campo(nome="Numero", tamanho = 10, requerido = true)
     private int Numero;
+    @Campo(nome="Cliente_id", tamanho = 10, requerido = true)
     private int Cliente_id;
+    @Campo(nome="fk_idFuncionario", tamanho = 10, requerido = true)
     private int fk_idFuncionario;  // ver porque teve que deixar publica
+    @Chave(campo="fk_idCidade", fk=true , requerido = true)
+    private Cidade cidade;
+
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
+    }
 
     public Endereco() {
     }

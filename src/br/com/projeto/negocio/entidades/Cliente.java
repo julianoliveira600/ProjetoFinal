@@ -2,31 +2,33 @@ package br.com.projeto.negocio.entidades;
 
 import br.com.projeto.persistencia.validacao.Campo;
 import br.com.projeto.persistencia.validacao.Chave;
+import br.com.projeto.persistencia.validacao.Tabela;
 import java.sql.Date;
 
+@Tabela(nome="CLIENTE")
 public class Cliente extends Entidade {
 
-    @Campo(tamanho = 10, requerido = true)
+    @Campo(nome="id", isId = true, tamanho = 10, requerido = true)
     private int id;
-    @Campo(tamanho = 50, requerido = true)
+    @Campo(nome="nome", tamanho = 50, requerido = true)
     private String nome;
-    @Campo(tamanho = 11, requerido = true)
+    @Campo(nome="cpf", tamanho = 11, requerido = true)
     private String cpf;
-    @Campo(tamanho = 25, requerido = true)
+    @Campo(nome="rg", tamanho = 25, requerido = true)
     private String rg;
-
+    @Campo(nome="datanascimento", tamanho = 50, requerido = false)
     private Date dataNascimento;
-    @Campo(tamanho = 50, requerido = true, formato = "[a-z0-9._-]+@[a-z.]+")
+    @Campo(nome="email", tamanho = 50, requerido = true, formato = "[a-z0-9._-]+@[a-z.]+")
     private String email;
-    @Campo(tamanho = 10, requerido = true, formato = "^[0-9]{8,10}$")
+    @Campo(nome="telefone", tamanho = 10, requerido = true, formato = "^[0-9]{8,10}$")
     private String Telefone;
-    @Campo(tamanho = 12, requerido = true)
+    @Campo(nome="celular", tamanho = 12, requerido = true)
     private String Celular;
-    @Chave(requerido = true)
+    @Chave(campo="Cliente_id", requerido = true)
     private Endereco endereco;
-    @Chave(requerido = false)
+    @Chave(campo="Cliente_id", requerido = false)
     private Biometria biometria;
-    @Chave(requerido = false)
+    @Chave(campo="Cliente_id", requerido = false)
     private Alteracoes alteracoes;
     private Avaliacao avaliacao;
 

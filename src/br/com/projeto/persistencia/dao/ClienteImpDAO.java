@@ -2,8 +2,10 @@ package br.com.projeto.persistencia.dao;
 
 import br.com.projeto.negocio.entidades.Alteracoes;
 import br.com.projeto.negocio.entidades.Biometria;
+import br.com.projeto.negocio.entidades.Cidade;
 import br.com.projeto.negocio.entidades.Cliente;
 import br.com.projeto.negocio.entidades.Endereco;
+import br.com.projeto.negocio.entidades.Estado;
 import br.com.projeto.persistencia.conexao.FabricaConexao;
 import br.com.projeto.persistencia.exception.PersistenciaException;
 import java.sql.Date;
@@ -82,9 +84,9 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
     public List<Cliente> list() throws PersistenciaException {
         PreparedStatement select = null;
         try {
-            select = FabricaConexao.obterConexao().prepareStatement(SELECT);
-            ResultSet rs = select.executeQuery();            
-            List<Cliente> clientes = new ArrayList<Cliente>();
+            //select = FabricaConexao.obterConexao().prepareStatement(SELECT);
+            //ResultSet rs = select.executeQuery();            
+            /*List<Cliente> clientes = new ArrayList<Cliente>();
             int id;
             String nome;
             String CPF;
@@ -103,7 +105,11 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
                 telefone = rs.getString(7);
                 celular = rs.getString(8);
                 clientes.add(new Cliente(id, nome, CPF, RG, dataNascimento, email, telefone, celular));
-            }
+            }*/
+            Cliente cliente = new Cliente();
+            List<Cliente> clientes;
+            System.out.println(cliente.prepareSelect().getSelect());
+            clientes = (List<Cliente>) cliente.prepareSelect().loadAll();
             return clientes;
         }catch (Exception e) { 
             e.printStackTrace();
@@ -116,11 +122,19 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
         PreparedStatement select = null;
         Cliente cliente = new Cliente();
         Endereco endereco = new Endereco();
+        Estado estado = new Estado();
+        Cidade cidade = new Cidade();
         Biometria biometria = new Biometria();
         Alteracoes alteracoes = new Alteracoes();
         try {
-            select = FabricaConexao.obterConexao().prepareStatement(SELECT_ALL);
-            select.setInt(1, id);
+            cidade.setEstado(estado);
+            endereco.setCidade(cidade);
+            cliente.setEndereco(endereco);
+            cliente.setAlteracoes(alteracoes);
+            cliente.prepareSelect().prepareWhere("id", id).loadOne();
+            
+            /*select = FabricaConexao.obterConexao().prepareStatement(query);
+            //select.setInt(1, id);
             ResultSet rs = select.executeQuery();            
             while (rs.next()) {
                 cliente.setId(rs.getInt(1));
@@ -139,7 +153,7 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
                 endereco.setComplemento(rs.getString(14));
                 endereco.setNumero(rs.getInt(15));
                 endereco.setCliente_id(rs.getInt(16));               
-            }
+            }*/
             cliente.setBiometria(biometria);
             cliente.setAlteracoes(alteracoes);
             cliente.setEndereco(endereco);
@@ -150,3 +164,4 @@ public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
         return cliente;
     }
 }
+
