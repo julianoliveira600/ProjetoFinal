@@ -32,8 +32,8 @@ public class Principal extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jCadastroCliente = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        jmCadastroCliente = new javax.swing.JMenuItem();
+        jmCadastroFuncioanario = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
 
@@ -47,25 +47,30 @@ public class Principal extends javax.swing.JFrame {
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 725, Short.MAX_VALUE)
+            .addGap(0, 773, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 406, Short.MAX_VALUE)
+            .addGap(0, 484, Short.MAX_VALUE)
         );
 
         jMenu1.setText("File");
 
-        jCadastroCliente.setText("Cadastro Cliente");
-        jCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
+        jmCadastroCliente.setText("Cadastro Cliente");
+        jmCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCadastroClienteActionPerformed(evt);
+                jmCadastroClienteActionPerformed(evt);
             }
         });
-        jMenu1.add(jCadastroCliente);
+        jMenu1.add(jmCadastroCliente);
 
-        jMenuItem2.setText("Cadastro Funcionario");
-        jMenu1.add(jMenuItem2);
+        jmCadastroFuncioanario.setText("Cadastro Funcionario");
+        jmCadastroFuncioanario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmCadastroFuncioanarioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jmCadastroFuncioanario);
 
         jMenuBar1.add(jMenu1);
 
@@ -91,11 +96,18 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroClienteActionPerformed
+    private void jmCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmCadastroClienteActionPerformed
         jiCliente1 cliente1 = new jiCliente1();
         cliente1.setVisible(true);
         jDesktopPane1.add(cliente1);
-    }//GEN-LAST:event_jCadastroClienteActionPerformed
+    }//GEN-LAST:event_jmCadastroClienteActionPerformed
+
+    private void jmCadastroFuncioanarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmCadastroFuncioanarioActionPerformed
+        jifFuncionario funcionario = new jifFuncionario();
+        funcionario.setVisible(true);
+        jDesktopPane1.add(funcionario);
+        
+    }//GEN-LAST:event_jmCadastroFuncioanarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -133,14 +145,14 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem jCadastroCliente;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JMenuItem jmCadastroCliente;
+    private javax.swing.JMenuItem jmCadastroFuncioanario;
     // End of variables declaration//GEN-END:variables
 }

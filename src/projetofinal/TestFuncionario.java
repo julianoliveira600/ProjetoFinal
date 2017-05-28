@@ -1,8 +1,6 @@
 package projetofinal;
 
-import br.com.projeto.controle.ClienteControle;
 import br.com.projeto.controle.FuncionarioControle;
-import br.com.projeto.negocio.entidades.Cliente;
 import br.com.projeto.negocio.entidades.Endereco;
 import br.com.projeto.negocio.entidades.Funcionario;
 import java.sql.Date;
@@ -12,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 public class TestFuncionario {
 

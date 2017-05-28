@@ -1,5 +1,6 @@
 package br.com.projeto.persistencia.dao;
 
+import br.com.projeto.negocio.entidades.Endereco;
 import br.com.projeto.negocio.entidades.Funcionario;
 import br.com.projeto.persistencia.conexao.FabricaConexao;
 import br.com.projeto.persistencia.exception.PersistenciaException;
@@ -9,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario> {
 
@@ -17,6 +17,7 @@ public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario
             + "values(?,?,?,?,?,?,?,?,?,?,?)";
     private static final String UPDATE = "UPDATE FUNCIONARIO SET nome= ?,  cpf = ?, email = ?, funcao = ?, dataNascimento = ? , rg = ?,  status = ?, login = ?, senha = ?, telefone = ?, celular =? where idFuncionario =  ?";
     private static final String SELECT = "SELECT * FROM FUNCIONARIO";
+    private static final String SELECT_ALL = "";
 
     @Override
     public int insert(Funcionario funcionario) throws PersistenciaException {
@@ -124,7 +125,42 @@ public class FuncionarioImpDAO extends BaseImpDAO implements BaseDAO<Funcionario
 
     @Override
     public Funcionario find(int id) throws PersistenciaException {
-       throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        PreparedStatement select = null;
+        Funcionario funcionario = new Funcionario();
+        Endereco endereco = new Endereco();
+        try {
+            select = FabricaConexao.obterConexao().prepareStatement(SELECT_ALL);
+            select.setInt(1, id);
+            ResultSet rs = select.executeQuery();
+            while (rs.next()) {
+                funcionario.setIdFuncionario(rs.getInt(1));
+                funcionario.setNome(rs.getString(2));
+                funcionario.setCPF(rs.getString(3));
+                funcionario.setEmail(rs.getString(4));
+                funcionario.setFuncao(rs.getString(5));
+                funcionario.setDataNascimento(rs.getDate(6));
+                funcionario.setRG(rs.getString(rs.getString(7)));
+                funcionario.setStatus(rs.getInt(8));
+                funcionario.setLogin(rs.getString(8));
+                funcionario.setSenha(rs.getString(9));
+                funcionario.setTelefone(rs.getString(10));
+                funcionario.setCelular(rs.getString(11));
+                endereco.setIdEndereco(rs.getInt(12));
+                endereco.setFk_idCidade(rs.getInt(13));
+                endereco.setRua(rs.getString(14));
+                endereco.setBairro(rs.getString(15));
+                endereco.setCEP(rs.getString(16));
+                endereco.setComplemento(rs.getString(17));
+                endereco.setNumero(rs.getInt(18));
+                endereco.setCliente_id(rs.getInt(19));
+                endereco.setFk_idFuncionario(rs.getInt(20));
+            }
+            funcionario.setEndereco(endereco);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new PersistenciaException("Erro ao carregar clientes");
+        }
+        return funcionario;
     }
 
 }

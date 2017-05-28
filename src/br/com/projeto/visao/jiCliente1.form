@@ -19,12 +19,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -52,7 +58,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="18" y="14" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="10" width="40" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -63,7 +69,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="30" width="230" height="-1"/>
+                  <AbsoluteConstraints x="20" y="30" width="320" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -73,7 +79,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="60" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="190" width="40" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -84,7 +90,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="80" width="230" height="19"/>
+                  <AbsoluteConstraints x="400" y="210" width="230" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -94,7 +100,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="110" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="70" width="70" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -105,7 +111,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="130" width="230" height="-1"/>
+                  <AbsoluteConstraints x="20" y="90" width="320" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -115,7 +121,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="160" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="190" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -125,7 +131,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="180" width="230" height="-1"/>
+                  <AbsoluteConstraints x="20" y="210" width="320" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -135,7 +141,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="150" y="220" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="300" width="50" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -145,7 +151,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="260" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="360" width="40" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -156,7 +162,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="280" width="230" height="-1"/>
+                  <AbsoluteConstraints x="20" y="390" width="320" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -166,7 +172,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="460" y="20" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="30" width="160" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -176,7 +182,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="20" width="112" height="20"/>
+                  <AbsoluteConstraints x="400" y="10" width="112" height="20"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -186,7 +192,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="60" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="250" width="30" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -196,7 +202,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="80" width="230" height="-1"/>
+                  <AbsoluteConstraints x="400" y="270" width="230" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -206,7 +212,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="110" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="70" width="50" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -217,7 +223,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="130" width="90" height="-1"/>
+                  <AbsoluteConstraints x="400" y="90" width="140" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -227,7 +233,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="470" y="110" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="20" y="130" width="40" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -238,7 +244,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="470" y="130" width="120" height="-1"/>
+                  <AbsoluteConstraints x="20" y="150" width="320" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -248,7 +254,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="160" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="130" width="30" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -258,7 +264,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="360" y="180" width="150" height="-1"/>
+                  <AbsoluteConstraints x="400" y="150" width="230" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -268,7 +274,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="210" width="-1" height="20"/>
+                  <AbsoluteConstraints x="20" y="250" width="50" height="20"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -285,7 +291,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="230" width="46" height="-1"/>
+                  <AbsoluteConstraints x="20" y="270" width="46" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -295,7 +301,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="370" y="250" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="310" width="60" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -305,7 +311,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="250" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="400" y="370" width="50" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -315,7 +321,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="270" width="120" height="-1"/>
+                  <AbsoluteConstraints x="400" y="390" width="230" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -326,7 +332,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="370" y="270" width="130" height="-1"/>
+                  <AbsoluteConstraints x="400" y="330" width="230" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -339,7 +345,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="460" y="410" width="80" height="-1"/>
+                  <AbsoluteConstraints x="400" y="440" width="110" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -349,7 +355,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="590" y="410" width="80" height="-1"/>
+                  <AbsoluteConstraints x="570" y="440" width="110" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -369,29 +375,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="150" y="240" width="124" height="-1"/>
+                  <AbsoluteConstraints x="20" y="320" width="124" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Container class="javax.swing.JToolBar" name="jToolBar1">
-              <Properties>
-                <Property name="rollover" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="659" y="413" width="100" height="25"/>
-                </Constraint>
-              </Constraints>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
-            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Avali&#xe7;&#xe3;o">
-                <Property name="tabTitle" type="java.lang.String" value="Avali&#xe7;&#xe3;o"/>
+              <JTabbedPaneConstraints tabName="Avalia&#xe7;&#xe3;o">
+                <Property name="tabTitle" type="java.lang.String" value="Avalia&#xe7;&#xe3;o"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -403,8 +397,10 @@
             <Component class="javax.swing.JComboBox" name="jComboBox1">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Cor da Pele"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Branca"/>
+                    <StringItem index="1" value="Negra"/>
+                    <StringItem index="2" value="Amarela"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -416,15 +412,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="20" width="144" height="-1"/>
+                  <AbsoluteConstraints x="100" y="20" width="70" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox3">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Aparencia Pele"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Regular"/>
+                    <StringItem index="1" value="Boa"/>
+                    <StringItem index="2" value="Ruim"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -436,15 +434,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="270" y="20" width="144" height="-1"/>
+                  <AbsoluteConstraints x="300" y="20" width="110" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox4">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Superficies da Pele"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Regular"/>
+                    <StringItem index="1" value="Boa"/>
+                    <StringItem index="2" value="Ruim"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -453,32 +453,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="480" y="20" width="144" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox5">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Les&#xf5;es"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="70" width="144" height="-1"/>
+                  <AbsoluteConstraints x="540" y="20" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox6">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Biotipo Cultaneo"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Regular"/>
+                    <StringItem index="1" value="Boa"/>
+                    <StringItem index="2" value="Ruim"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -487,15 +472,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="270" y="70" width="144" height="-1"/>
+                  <AbsoluteConstraints x="300" y="60" width="110" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox7">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Pele com Acne"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Regular"/>
+                    <StringItem index="1" value="Boa"/>
+                    <StringItem index="2" value="Ruim"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -504,32 +491,17 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="480" y="70" width="144" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox8">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Flacidez"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="120" width="144" height="-1"/>
+                  <AbsoluteConstraints x="540" y="60" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox9">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="Desidrata&#xe7;&#xe3;o"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Regular"/>
+                    <StringItem index="1" value="Boa"/>
+                    <StringItem index="2" value="Ruim"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -538,7 +510,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="270" y="120" width="144" height="-1"/>
+                  <AbsoluteConstraints x="100" y="60" width="70" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -623,7 +595,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox1">
+            <Component class="java.awt.Checkbox" name="cbTelangiectasia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Telangiectasia"/>
               </Properties>
@@ -633,7 +605,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox2">
+            <Component class="java.awt.Checkbox" name="cbEfelides">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Efelides"/>
               </Properties>
@@ -643,7 +615,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox3">
+            <Component class="java.awt.Checkbox" name="cbXantelasma">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Xantelasma"/>
               </Properties>
@@ -653,7 +625,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox4">
+            <Component class="java.awt.Checkbox" name="cbAtrofia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Atrofia"/>
               </Properties>
@@ -663,7 +635,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox5">
+            <Component class="java.awt.Checkbox" name="cbRosacea">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Rosacea"/>
               </Properties>
@@ -673,7 +645,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox6">
+            <Component class="java.awt.Checkbox" name="cbHipocromia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hipocromia"/>
               </Properties>
@@ -683,7 +655,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox7">
+            <Component class="java.awt.Checkbox" name="cbPetequias">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Petequias"/>
               </Properties>
@@ -693,7 +665,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox8">
+            <Component class="java.awt.Checkbox" name="cbPustulas">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Pustulas"/>
               </Properties>
@@ -703,7 +675,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox9">
+            <Component class="java.awt.Checkbox" name="cbUlceracao">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Ulcera&#xe7;&#xe3;o"/>
               </Properties>
@@ -713,7 +685,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox10">
+            <Component class="java.awt.Checkbox" name="cbHipertricose">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hipertricose"/>
               </Properties>
@@ -723,7 +695,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox11">
+            <Component class="java.awt.Checkbox" name="cbSeborreia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Seborreia"/>
               </Properties>
@@ -733,7 +705,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox12">
+            <Component class="java.awt.Checkbox" name="cbCroasma">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Croasma"/>
               </Properties>
@@ -743,7 +715,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox13">
+            <Component class="java.awt.Checkbox" name="cbCianose">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Cianose"/>
               </Properties>
@@ -753,7 +725,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox14">
+            <Component class="java.awt.Checkbox" name="cbHematoma">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hematoma"/>
               </Properties>
@@ -763,7 +735,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox15">
+            <Component class="java.awt.Checkbox" name="cbVesicula">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Vesicula"/>
               </Properties>
@@ -773,7 +745,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox16">
+            <Component class="java.awt.Checkbox" name="cbDescamacao">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Descama&#xe7;&#xe3;o"/>
               </Properties>
@@ -783,7 +755,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox17">
+            <Component class="java.awt.Checkbox" name="cbHirsutismo">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hirsutismo"/>
               </Properties>
@@ -793,7 +765,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox18">
+            <Component class="java.awt.Checkbox" name="cbHiperqueratose">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hiperqueratose"/>
               </Properties>
@@ -803,7 +775,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox19">
+            <Component class="java.awt.Checkbox" name="cbFoliculite">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Foliculite"/>
               </Properties>
@@ -813,7 +785,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox20">
+            <Component class="java.awt.Checkbox" name="cbAngioma">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Angioma"/>
               </Properties>
@@ -823,7 +795,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox21">
+            <Component class="java.awt.Checkbox" name="cbCeratose">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Ceratose"/>
               </Properties>
@@ -833,7 +805,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox22">
+            <Component class="java.awt.Checkbox" name="cbNodulos">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Nodulos"/>
               </Properties>
@@ -843,7 +815,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox23">
+            <Component class="java.awt.Checkbox" name="cbCrosta">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Crosta"/>
               </Properties>
@@ -853,7 +825,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox24">
+            <Component class="java.awt.Checkbox" name="cbEscoriacao">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Escoria&#xe7;&#xe3;o"/>
               </Properties>
@@ -863,7 +835,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox25">
+            <Component class="java.awt.Checkbox" name="cbEczema">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Eczema"/>
               </Properties>
@@ -873,7 +845,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox26">
+            <Component class="java.awt.Checkbox" name="cbCicatriz">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Cicatriz"/>
               </Properties>
@@ -883,7 +855,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox27">
+            <Component class="java.awt.Checkbox" name="cbHipercromia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Hipercromia"/>
               </Properties>
@@ -893,7 +865,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox28">
+            <Component class="java.awt.Checkbox" name="cbEritema">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Eritema"/>
               </Properties>
@@ -939,27 +911,30 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="520" y="380" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="520" y="140" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox33">
+            <Component class="java.awt.Checkbox" name="cbOleosidade">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Oleosidade"/>
               </Properties>
+              <Events>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="cbOleosidadeFocusLost"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="410" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="30" y="140" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox34">
+            <Component class="java.awt.Checkbox" name="cbFlacidez">
               <Properties>
-                <Property name="label" type="java.lang.String" value="Espessura"/>
+                <Property name="label" type="java.lang.String" value="Flacidez"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="140" y="410" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="410" y="140" width="87" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -969,7 +944,87 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="590" y="410" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="570" y="420" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel30">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cor da Pele:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="30" y="20" width="70" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel33">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Aparencia Pele:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="220" y="20" width="80" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel34">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Biotipo Cultaneo:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="210" y="60" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel35">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Desidrata&#xe7;&#xe3;o:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="20" y="60" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel36">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Superficies da Pele:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="430" y="20" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel37">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pele com Acne:"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="450" y="60" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="java.awt.Checkbox" name="cbEspessura1">
+              <Properties>
+                <Property name="label" type="java.lang.String" value="Espessura"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="140" y="140" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="java.awt.Checkbox" name="cbLesoes1">
+              <Properties>
+                <Property name="label" type="java.lang.String" value="Les&#xf5;es"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="270" y="140" width="87" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -1088,9 +1143,9 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField1">
+            <Component class="java.awt.TextField" name="txBraco">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txBracoActionPerformed"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1098,37 +1153,37 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField2">
+            <Component class="java.awt.TextField" name="tfBusto">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="90" y="80" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField3">
+            <Component class="java.awt.TextField" name="tfQuladril">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="90" y="130" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField4">
+            <Component class="java.awt.TextField" name="tfPerna">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="90" y="170" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField5">
+            <Component class="java.awt.TextField" name="tfEstomago">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="290" y="30" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField6">
+            <Component class="java.awt.TextField" name="tfCintura">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfCinturaActionPerformed"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1136,28 +1191,28 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField7">
+            <Component class="java.awt.TextField" name="tfAbdomem">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="290" y="130" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField8">
+            <Component class="java.awt.TextField" name="tfCulote">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="530" y="30" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField9">
+            <Component class="java.awt.TextField" name="tfCoxaBX">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="530" y="80" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField10">
+            <Component class="java.awt.TextField" name="tfCoxaAt">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="530" y="130" width="100" height="-1"/>
@@ -1193,7 +1248,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+            <Component class="javax.swing.JRadioButton" name="jrbCelulite">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Celulite:"/>
               </Properties>
@@ -1203,7 +1258,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+            <Component class="javax.swing.JRadioButton" name="jrbGorduraLoc">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Gordura Localizada"/>
               </Properties>
@@ -1223,7 +1278,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+            <Component class="javax.swing.JRadioButton" name="jrbPtose">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ptose"/>
               </Properties>
@@ -1233,7 +1288,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+            <Component class="javax.swing.JRadioButton" name="jrbVibices">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Vibices"/>
               </Properties>
@@ -1264,37 +1319,31 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField11">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="textField11"/>
-              </Properties>
+            <Component class="java.awt.TextField" name="tfLocalGord">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfLocalGordActionPerformed"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="230" y="270" width="130" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField12">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="textField12"/>
-              </Properties>
+            <Component class="java.awt.TextField" name="tfLocalPtose">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="230" y="310" width="130" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="java.awt.TextField" name="textField13">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="textField13"/>
-              </Properties>
+            <Component class="java.awt.TextField" name="tfLocalVibices">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="230" y="350" width="130" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
+            <Component class="javax.swing.JButton" name="JbAvancarBiom">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Avan&#xe7;ar"/>
               </Properties>
@@ -1324,9 +1373,9 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="checkbox35" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="checkbox36" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="checkbox37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbCardiaca" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbProteses" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbMarcapasso" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel29" alignment="1" min="-2" pref="79" max="-2" attributes="0"/>
                               </Group>
@@ -1334,33 +1383,33 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="checkbox39" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkbox38" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbBronquite" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbVasculares" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="checkbox40" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbEplepsia" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="checkbox41" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkbox42" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkbox43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbReumaticas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbAlergicas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbOncologia" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="checkbox46" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbGinecologicas" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="checkbox44" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkbox45" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbRenais" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbDIU" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="checkbox48" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkbox47" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbGestante" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbGlandulares" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1370,7 +1419,7 @@
                               <Component id="jTextField1" min="-2" pref="599" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="67" max="32767" attributes="0"/>
+                      <EmptySpace pref="114" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
@@ -1386,42 +1435,42 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="checkbox35" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkbox44" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkbox41" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkbox38" min="-2" pref="20" max="-2" attributes="0"/>
-                                  <Component id="checkbox47" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbCardiaca" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbRenais" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbReumaticas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbVasculares" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="cbGlandulares" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="checkbox39" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkbox36" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbBronquite" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbProteses" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="checkbox42" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkbox48" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbAlergicas" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbGestante" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="checkbox45" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbDIU" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="checkbox37" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox40" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox43" min="-2" max="-2" attributes="0"/>
-                          <Component id="checkbox46" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbMarcapasso" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbEplepsia" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbOncologia" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbGinecologicas" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField1" pref="181" max="32767" attributes="0"/>
+                      <Component id="jTextField1" pref="210" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
@@ -1430,72 +1479,72 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="java.awt.Checkbox" name="checkbox35">
+            <Component class="java.awt.Checkbox" name="cbCardiaca">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Cardiaca"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox36">
+            <Component class="java.awt.Checkbox" name="cbProteses">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Proteses"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox37">
+            <Component class="java.awt.Checkbox" name="cbMarcapasso">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Marcapasso"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox38">
+            <Component class="java.awt.Checkbox" name="cbVasculares">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Vasculares"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox39">
+            <Component class="java.awt.Checkbox" name="cbBronquite">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Bronquite"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox40">
+            <Component class="java.awt.Checkbox" name="cbEplepsia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Eplepsia"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox41">
+            <Component class="java.awt.Checkbox" name="cbReumaticas">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Reumaticas"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox42">
+            <Component class="java.awt.Checkbox" name="cbAlergicas">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Alergicas"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox43">
+            <Component class="java.awt.Checkbox" name="cbOncologia">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Oncologia"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox44">
+            <Component class="java.awt.Checkbox" name="cbRenais">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Renais"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox45">
+            <Component class="java.awt.Checkbox" name="cbDIU">
               <Properties>
                 <Property name="label" type="java.lang.String" value="DIU"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox46">
+            <Component class="java.awt.Checkbox" name="cbGinecologicas">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Ginecologicas"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox47">
+            <Component class="java.awt.Checkbox" name="cbGlandulares">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Glandulares"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Checkbox" name="checkbox48">
+            <Component class="java.awt.Checkbox" name="cbGestante">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Gestante"/>
               </Properties>

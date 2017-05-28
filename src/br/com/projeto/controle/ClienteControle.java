@@ -81,15 +81,23 @@ public class ClienteControle implements BaseControle<Cliente> {
             ClienteImpDAO clienteDao = new ClienteImpDAO();
             EnderecoImpDAO enderecoDAO = new EnderecoImpDAO();
             int id = clienteDao.edit(entidade);
+            
             Endereco enderecoAntigo = enderecoDAO.findByCliente(entidade.getId());
             entidade.getEndereco().setCliente_id(id);
             entidade.getEndereco().setIdEndereco(enderecoAntigo.getIdEndereco());
             int idEndereco = enderecoDAO.edit(entidade.getEndereco());
+            
+            AvaliacaoImpDao avaliacaoDAO = new AvaliacaoImpDao();
+            entidade.getAvaliacao().setCliente_id(id);
+            int idAvaliacao = avaliacaoDAO.insert(entidade.getAvaliacao());
 
-//            AlteracoesImpDAO alteracoesDAO = new AlteracoesImpDAO();
-//            int id = clienteDAO.edit(entidade);
-//            Alteracoes alteracoesAntigas = alteracoesDAO.findByCliente(entidade.getId());
-//            con.commit();
+            AlteracoesImpDAO alteracoesDAO = new AlteracoesImpDAO();
+            Alteracoes alteracoesAntigas = alteracoesDAO.findByCliente(entidade.getId());
+            
+            BiometriaImpDAO biometriaDAO = new BiometriaImpDAO();
+            entidade.getBiometria().setCliente_id(id);
+            int idBiometria = biometriaDAO.insert(entidade.getBiometria());
+            con.commit();
 
         } catch (SQLException ex) {
             entidade.adicionarMensagem(ex.getMessage());

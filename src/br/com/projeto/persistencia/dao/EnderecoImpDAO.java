@@ -86,7 +86,7 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
 
         } catch (Exception e) {
             e.printStackTrace();
-            throw new PersistenciaException("Erro ao inserir Cliente");
+            throw new PersistenciaException("Erro ao inserir Endereco Cliente");
         } finally {
 //            try {
 //                insert.close();
@@ -98,7 +98,38 @@ public class EnderecoImpDAO extends BaseImpDAO implements BaseDAO<Endereco> {
 
     @Override
     public List<Endereco> list() throws PersistenciaException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        PreparedStatement select = null;
+        try {
+            select = FabricaConexao.obterConexao().prepareStatement(SELECT_ID);
+            ResultSet rs = select.executeQuery();
+            List<Endereco> endereco = new ArrayList<Endereco>();
+            int idEndereco;
+            int fk_idCidade;
+            String Rua;
+            String Bairro;
+            String CEP;
+            String Complemento;
+            int Numero;
+            int Cliente_id;
+            int fk_idFuncionario;
+            while (rs.next()) {
+                idEndereco = rs.getInt(1);
+                fk_idCidade = rs.getInt(2);
+                Rua = rs.getString(3);
+                Bairro = rs.getString(4);
+                CEP = rs.getString(5);
+                Complemento = rs.getString(6);
+                Numero = rs.getInt(rs.getInt(7));
+                Cliente_id = rs.getInt(8);
+                fk_idFuncionario = rs.getInt(9);
+                
+                endereco.add(new Endereco(idEndereco, fk_idCidade, Rua, Bairro, CEP, Complemento, Numero, Cliente_id, fk_idFuncionario));
+            }
+            return endereco;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new PersistenciaException("Erro ao listar Endereco");
+        }
     }
 
     @Override

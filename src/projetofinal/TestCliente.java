@@ -161,9 +161,9 @@ public class TestCliente {
         cliente.obterMensagens();
         return cliente.getId();
 
-        /////////////////////////////////////////////////////////////////////
+       
     }
-
+ ///////////////////////////// Update /////////////////////////////////////////////////
     public void testUpdate(int id) {
         ClienteControle cc = new ClienteControle();
         Cliente cliente = new Cliente();
@@ -304,7 +304,7 @@ public class TestCliente {
         ClienteControle cc = new ClienteControle();
         List<Cliente> clientes = cc.listar();
         for (Cliente cliente : clientes) {
-            System.out.println(cliente.getId() + ":" + cliente.getNome());
+            System.out.println(cliente.getId() + ":" + cliente.getNome() + ":" + cliente.getCpf());
         }
     }
 
@@ -314,5 +314,7 @@ public class TestCliente {
         System.out.println(cliente.getId() + ":" + cliente.getNome());
         System.out.println(cliente.getEndereco().getIdEndereco() + ":" + cliente.getEndereco().getCEP());
         System.out.println(cliente.getAlteracoes().getObservacoes());
+        System.out.println(cliente.getAvaliacao().getAcne() + ":" + cliente.getAvaliacao().getDesidratacao());
+        System.out.println(cliente.getBiometria().getCoxaesq() + ":" + cliente.getBiometria().getCintura());
     }
 }

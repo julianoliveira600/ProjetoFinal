@@ -8,6 +8,7 @@ package br.com.projeto.visao;
 import br.com.projeto.controle.ClienteControle;
 import br.com.projeto.negocio.entidades.Cliente;
 import br.com.projeto.negocio.entidades.Endereco;
+import br.com.projeto.negocio.entidades.Avaliacao;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -15,7 +16,6 @@ import java.text.SimpleDateFormat;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -29,7 +29,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
      */
     public jiCliente1() {
         initComponents();
-       
+
     }
 
     /**
@@ -73,15 +73,12 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jbCadastrar = new javax.swing.JButton();
         jbCancelar = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jToolBar1 = new javax.swing.JToolBar();
         jPanel2 = new javax.swing.JPanel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
         jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
         jComboBox6 = new javax.swing.JComboBox<>();
         jComboBox7 = new javax.swing.JComboBox<>();
-        jComboBox8 = new javax.swing.JComboBox<>();
         jComboBox9 = new javax.swing.JComboBox<>();
         cbMillium = new java.awt.Checkbox();
         cbRugas = new java.awt.Checkbox();
@@ -91,41 +88,49 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         cbNecrose = new java.awt.Checkbox();
         cbFisura = new java.awt.Checkbox();
         cbCouperose = new java.awt.Checkbox();
-        checkbox1 = new java.awt.Checkbox();
-        checkbox2 = new java.awt.Checkbox();
-        checkbox3 = new java.awt.Checkbox();
-        checkbox4 = new java.awt.Checkbox();
-        checkbox5 = new java.awt.Checkbox();
-        checkbox6 = new java.awt.Checkbox();
-        checkbox7 = new java.awt.Checkbox();
-        checkbox8 = new java.awt.Checkbox();
-        checkbox9 = new java.awt.Checkbox();
-        checkbox10 = new java.awt.Checkbox();
-        checkbox11 = new java.awt.Checkbox();
-        checkbox12 = new java.awt.Checkbox();
-        checkbox13 = new java.awt.Checkbox();
-        checkbox14 = new java.awt.Checkbox();
-        checkbox15 = new java.awt.Checkbox();
-        checkbox16 = new java.awt.Checkbox();
-        checkbox17 = new java.awt.Checkbox();
-        checkbox18 = new java.awt.Checkbox();
-        checkbox19 = new java.awt.Checkbox();
-        checkbox20 = new java.awt.Checkbox();
-        checkbox21 = new java.awt.Checkbox();
-        checkbox22 = new java.awt.Checkbox();
-        checkbox23 = new java.awt.Checkbox();
-        checkbox24 = new java.awt.Checkbox();
-        checkbox25 = new java.awt.Checkbox();
-        checkbox26 = new java.awt.Checkbox();
-        checkbox27 = new java.awt.Checkbox();
-        checkbox28 = new java.awt.Checkbox();
+        cbTelangiectasia = new java.awt.Checkbox();
+        cbEfelides = new java.awt.Checkbox();
+        cbXantelasma = new java.awt.Checkbox();
+        cbAtrofia = new java.awt.Checkbox();
+        cbRosacea = new java.awt.Checkbox();
+        cbHipocromia = new java.awt.Checkbox();
+        cbPetequias = new java.awt.Checkbox();
+        cbPustulas = new java.awt.Checkbox();
+        cbUlceracao = new java.awt.Checkbox();
+        cbHipertricose = new java.awt.Checkbox();
+        cbSeborreia = new java.awt.Checkbox();
+        cbCroasma = new java.awt.Checkbox();
+        cbCianose = new java.awt.Checkbox();
+        cbHematoma = new java.awt.Checkbox();
+        cbVesicula = new java.awt.Checkbox();
+        cbDescamacao = new java.awt.Checkbox();
+        cbHirsutismo = new java.awt.Checkbox();
+        cbHiperqueratose = new java.awt.Checkbox();
+        cbFoliculite = new java.awt.Checkbox();
+        cbAngioma = new java.awt.Checkbox();
+        cbCeratose = new java.awt.Checkbox();
+        cbNodulos = new java.awt.Checkbox();
+        cbCrosta = new java.awt.Checkbox();
+        cbEscoriacao = new java.awt.Checkbox();
+        cbEczema = new java.awt.Checkbox();
+        cbCicatriz = new java.awt.Checkbox();
+        cbHipercromia = new java.awt.Checkbox();
+        cbEritema = new java.awt.Checkbox();
         checkbox29 = new java.awt.Checkbox();
         checkbox30 = new java.awt.Checkbox();
         checkbox31 = new java.awt.Checkbox();
         checkbox32 = new java.awt.Checkbox();
-        checkbox33 = new java.awt.Checkbox();
-        checkbox34 = new java.awt.Checkbox();
+        cbOleosidade = new java.awt.Checkbox();
+        cbFlacidez = new java.awt.Checkbox();
         jButton1 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        cbEspessura1 = new java.awt.Checkbox();
+        cbLesoes1 = new java.awt.Checkbox();
         jPanel3 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -137,44 +142,44 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        textField1 = new java.awt.TextField();
-        textField2 = new java.awt.TextField();
-        textField3 = new java.awt.TextField();
-        textField4 = new java.awt.TextField();
-        textField5 = new java.awt.TextField();
-        textField6 = new java.awt.TextField();
-        textField7 = new java.awt.TextField();
-        textField8 = new java.awt.TextField();
-        textField9 = new java.awt.TextField();
-        textField10 = new java.awt.TextField();
+        txBraco = new java.awt.TextField();
+        tfBusto = new java.awt.TextField();
+        tfQuladril = new java.awt.TextField();
+        tfPerna = new java.awt.TextField();
+        tfEstomago = new java.awt.TextField();
+        tfCintura = new java.awt.TextField();
+        tfAbdomem = new java.awt.TextField();
+        tfCulote = new java.awt.TextField();
+        tfCoxaBX = new java.awt.TextField();
+        tfCoxaAt = new java.awt.TextField();
         jComboBox11 = new javax.swing.JComboBox<>();
         jLabel25 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        jrbCelulite = new javax.swing.JRadioButton();
+        jrbGorduraLoc = new javax.swing.JRadioButton();
         jLabel26 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        jrbPtose = new javax.swing.JRadioButton();
+        jrbVibices = new javax.swing.JRadioButton();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        textField11 = new java.awt.TextField();
-        textField12 = new java.awt.TextField();
-        textField13 = new java.awt.TextField();
-        jButton2 = new javax.swing.JButton();
+        tfLocalGord = new java.awt.TextField();
+        tfLocalPtose = new java.awt.TextField();
+        tfLocalVibices = new java.awt.TextField();
+        JbAvancarBiom = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        checkbox35 = new java.awt.Checkbox();
-        checkbox36 = new java.awt.Checkbox();
-        checkbox37 = new java.awt.Checkbox();
-        checkbox38 = new java.awt.Checkbox();
-        checkbox39 = new java.awt.Checkbox();
-        checkbox40 = new java.awt.Checkbox();
-        checkbox41 = new java.awt.Checkbox();
-        checkbox42 = new java.awt.Checkbox();
-        checkbox43 = new java.awt.Checkbox();
-        checkbox44 = new java.awt.Checkbox();
-        checkbox45 = new java.awt.Checkbox();
-        checkbox46 = new java.awt.Checkbox();
-        checkbox47 = new java.awt.Checkbox();
-        checkbox48 = new java.awt.Checkbox();
+        cbCardiaca = new java.awt.Checkbox();
+        cbProteses = new java.awt.Checkbox();
+        cbMarcapasso = new java.awt.Checkbox();
+        cbVasculares = new java.awt.Checkbox();
+        cbBronquite = new java.awt.Checkbox();
+        cbEplepsia = new java.awt.Checkbox();
+        cbReumaticas = new java.awt.Checkbox();
+        cbAlergicas = new java.awt.Checkbox();
+        cbOncologia = new java.awt.Checkbox();
+        cbRenais = new java.awt.Checkbox();
+        cbDIU = new java.awt.Checkbox();
+        cbGinecologicas = new java.awt.Checkbox();
+        cbGlandulares = new java.awt.Checkbox();
+        cbGestante = new java.awt.Checkbox();
         jLabel29 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
@@ -183,7 +188,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Nome:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(18, 14, 31, 14);
+        jLabel1.setBounds(20, 10, 40, 14);
 
         jtNome.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -196,11 +201,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtNome);
-        jtNome.setBounds(20, 30, 230, 20);
+        jtNome.setBounds(20, 30, 320, 30);
 
         jLabel2.setText("CPF:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(20, 60, 23, 14);
+        jLabel2.setBounds(400, 190, 40, 14);
 
         jtCPF.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -213,11 +218,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtCPF);
-        jtCPF.setBounds(20, 80, 230, 19);
+        jtCPF.setBounds(400, 210, 230, 30);
 
         jLabel3.setText("Endereço:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 110, 49, 14);
+        jLabel3.setBounds(20, 70, 70, 14);
 
         jtEndereco.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -230,11 +235,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtEndereco);
-        jtEndereco.setBounds(20, 130, 230, 20);
+        jtEndereco.setBounds(20, 90, 320, 30);
 
         jLabel4.setText("Complemento:");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(20, 160, 69, 14);
+        jLabel4.setBounds(20, 190, 90, 14);
 
         jtComplemento.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -242,15 +247,15 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtComplemento);
-        jtComplemento.setBounds(20, 180, 230, 20);
+        jtComplemento.setBounds(20, 210, 320, 30);
 
         jLabel5.setText("Cidade:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(150, 220, 37, 14);
+        jLabel5.setBounds(20, 300, 50, 14);
 
         jLabel6.setText("Email:");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(20, 260, 28, 14);
+        jLabel6.setBounds(20, 360, 40, 14);
 
         jtEmail.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -263,7 +268,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtEmail);
-        jtEmail.setBounds(20, 280, 230, 20);
+        jtEmail.setBounds(20, 390, 320, 30);
 
         jdData.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -271,15 +276,15 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jdData);
-        jdData.setBounds(460, 20, 87, 20);
+        jdData.setBounds(400, 30, 160, 30);
 
         jLabel14.setText("Data Nascimento: ");
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(360, 20, 112, 20);
+        jLabel14.setBounds(400, 10, 112, 20);
 
         jLabel7.setText("RG:");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(360, 60, 18, 14);
+        jLabel7.setBounds(400, 250, 30, 14);
 
         jtRG.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -287,11 +292,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtRG);
-        jtRG.setBounds(360, 80, 230, 20);
+        jtRG.setBounds(400, 270, 230, 30);
 
         jLabel8.setText("Numero:");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(360, 110, 41, 14);
+        jLabel8.setBounds(400, 70, 50, 14);
 
         jtNumero.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -304,11 +309,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtNumero);
-        jtNumero.setBounds(360, 130, 90, 20);
+        jtNumero.setBounds(400, 90, 140, 30);
 
         jLabel13.setText("Bairro:");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(470, 110, 32, 14);
+        jLabel13.setBounds(20, 130, 40, 14);
 
         jtBairro.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -321,11 +326,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtBairro);
-        jtBairro.setBounds(470, 130, 120, 20);
+        jtBairro.setBounds(20, 150, 320, 30);
 
         jLabel9.setText("CEP:");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(360, 160, 23, 14);
+        jLabel9.setBounds(400, 130, 30, 14);
 
         jtCEP.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -333,23 +338,23 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtCEP);
-        jtCEP.setBounds(360, 180, 150, 20);
+        jtCEP.setBounds(400, 150, 230, 30);
 
         jLabel10.setText("Estado:");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(20, 210, 37, 20);
+        jLabel10.setBounds(20, 250, 50, 20);
 
         jcCidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1" }));
         jPanel1.add(jcCidade);
-        jcCidade.setBounds(20, 230, 46, 20);
+        jcCidade.setBounds(20, 270, 46, 20);
 
         jLabel11.setText("Telefone:");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(370, 250, 46, 14);
+        jLabel11.setBounds(400, 310, 60, 14);
 
         jLabel12.setText("Celular:");
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(550, 250, 37, 14);
+        jLabel12.setBounds(400, 370, 50, 14);
 
         jtCelular.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -357,7 +362,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtCelular);
-        jtCelular.setBounds(550, 270, 120, 20);
+        jtCelular.setBounds(400, 390, 230, 30);
 
         jtTelefone.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -370,7 +375,7 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jtTelefone);
-        jtTelefone.setBounds(370, 270, 130, 20);
+        jtTelefone.setBounds(400, 330, 230, 30);
 
         jbCadastrar.setText("Cadastrar");
         jbCadastrar.addActionListener(new java.awt.event.ActionListener() {
@@ -379,11 +384,11 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jbCadastrar);
-        jbCadastrar.setBounds(460, 410, 80, 23);
+        jbCadastrar.setBounds(400, 440, 110, 23);
 
         jbCancelar.setText("Cancelar");
         jPanel1.add(jbCancelar);
-        jbCancelar.setBounds(590, 410, 80, 23);
+        jbCancelar.setBounds(570, 440, 110, 23);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3" }));
         jComboBox2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -392,57 +397,45 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(150, 240, 124, 20);
-
-        jToolBar1.setRollover(true);
-        jPanel1.add(jToolBar1);
-        jToolBar1.setBounds(659, 413, 100, 25);
+        jComboBox2.setBounds(20, 320, 124, 20);
 
         jTabbedPane1.addTab("Cadastro ", jPanel1);
 
         jPanel2.setLayout(null);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cor da Pele" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Branca", "Negra", "Amarela" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
         jPanel2.add(jComboBox1);
-        jComboBox1.setBounds(30, 20, 144, 20);
+        jComboBox1.setBounds(100, 20, 70, 20);
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aparencia Pele" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Boa", "Ruim" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox3ActionPerformed(evt);
             }
         });
         jPanel2.add(jComboBox3);
-        jComboBox3.setBounds(270, 20, 144, 20);
+        jComboBox3.setBounds(300, 20, 110, 20);
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Superficies da Pele" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Boa", "Ruim" }));
         jPanel2.add(jComboBox4);
-        jComboBox4.setBounds(480, 20, 144, 20);
+        jComboBox4.setBounds(540, 20, 90, 20);
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lesões" }));
-        jPanel2.add(jComboBox5);
-        jComboBox5.setBounds(30, 70, 144, 20);
-
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Biotipo Cultaneo" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Boa", "Ruim" }));
         jPanel2.add(jComboBox6);
-        jComboBox6.setBounds(270, 70, 144, 20);
+        jComboBox6.setBounds(300, 60, 110, 20);
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pele com Acne" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Boa", "Ruim" }));
         jPanel2.add(jComboBox7);
-        jComboBox7.setBounds(480, 70, 144, 20);
+        jComboBox7.setBounds(540, 60, 90, 20);
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Flacidez" }));
-        jPanel2.add(jComboBox8);
-        jComboBox8.setBounds(30, 120, 144, 20);
-
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Desidratação" }));
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Boa", "Ruim" }));
         jPanel2.add(jComboBox9);
-        jComboBox9.setBounds(270, 120, 144, 20);
+        jComboBox9.setBounds(100, 60, 70, 20);
 
         cbMillium.setLabel("Milium");
         cbMillium.setName("Millium"); // NOI18N
@@ -477,117 +470,117 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jPanel2.add(cbCouperose);
         cbCouperose.setBounds(140, 170, 88, 20);
 
-        checkbox1.setLabel("Telangiectasia");
-        jPanel2.add(checkbox1);
-        checkbox1.setBounds(270, 170, 100, 20);
+        cbTelangiectasia.setLabel("Telangiectasia");
+        jPanel2.add(cbTelangiectasia);
+        cbTelangiectasia.setBounds(270, 170, 100, 20);
 
-        checkbox2.setLabel("Efelides");
-        jPanel2.add(checkbox2);
-        checkbox2.setBounds(410, 170, 71, 20);
+        cbEfelides.setLabel("Efelides");
+        jPanel2.add(cbEfelides);
+        cbEfelides.setBounds(410, 170, 71, 20);
 
-        checkbox3.setLabel("Xantelasma");
-        jPanel2.add(checkbox3);
-        checkbox3.setBounds(520, 170, 84, 20);
+        cbXantelasma.setLabel("Xantelasma");
+        jPanel2.add(cbXantelasma);
+        cbXantelasma.setBounds(520, 170, 84, 20);
 
-        checkbox4.setLabel("Atrofia");
-        jPanel2.add(checkbox4);
-        checkbox4.setBounds(30, 380, 84, 20);
+        cbAtrofia.setLabel("Atrofia");
+        jPanel2.add(cbAtrofia);
+        cbAtrofia.setBounds(30, 380, 84, 20);
 
-        checkbox5.setLabel("Rosacea");
-        jPanel2.add(checkbox5);
-        checkbox5.setBounds(140, 200, 76, 20);
+        cbRosacea.setLabel("Rosacea");
+        jPanel2.add(cbRosacea);
+        cbRosacea.setBounds(140, 200, 76, 20);
 
-        checkbox6.setLabel("Hipocromia");
-        jPanel2.add(checkbox6);
-        checkbox6.setBounds(140, 230, 90, 20);
+        cbHipocromia.setLabel("Hipocromia");
+        jPanel2.add(cbHipocromia);
+        cbHipocromia.setBounds(140, 230, 90, 20);
 
-        checkbox7.setLabel("Petequias");
-        jPanel2.add(checkbox7);
-        checkbox7.setBounds(140, 260, 82, 20);
+        cbPetequias.setLabel("Petequias");
+        jPanel2.add(cbPetequias);
+        cbPetequias.setBounds(140, 260, 82, 20);
 
-        checkbox8.setLabel("Pustulas");
-        jPanel2.add(checkbox8);
-        checkbox8.setBounds(140, 290, 75, 20);
+        cbPustulas.setLabel("Pustulas");
+        jPanel2.add(cbPustulas);
+        cbPustulas.setBounds(140, 290, 75, 20);
 
-        checkbox9.setLabel("Ulceração");
-        jPanel2.add(checkbox9);
-        checkbox9.setBounds(140, 320, 82, 20);
+        cbUlceracao.setLabel("Ulceração");
+        jPanel2.add(cbUlceracao);
+        cbUlceracao.setBounds(140, 320, 82, 20);
 
-        checkbox10.setLabel("Hipertricose");
-        jPanel2.add(checkbox10);
-        checkbox10.setBounds(140, 350, 93, 20);
+        cbHipertricose.setLabel("Hipertricose");
+        jPanel2.add(cbHipertricose);
+        cbHipertricose.setBounds(140, 350, 93, 20);
 
-        checkbox11.setLabel("Seborreia");
-        jPanel2.add(checkbox11);
-        checkbox11.setBounds(270, 200, 80, 20);
+        cbSeborreia.setLabel("Seborreia");
+        jPanel2.add(cbSeborreia);
+        cbSeborreia.setBounds(270, 200, 80, 20);
 
-        checkbox12.setLabel("Croasma");
-        jPanel2.add(checkbox12);
-        checkbox12.setBounds(270, 230, 78, 20);
+        cbCroasma.setLabel("Croasma");
+        jPanel2.add(cbCroasma);
+        cbCroasma.setBounds(270, 230, 78, 20);
 
-        checkbox13.setLabel("Cianose");
-        jPanel2.add(checkbox13);
-        checkbox13.setBounds(270, 260, 73, 20);
+        cbCianose.setLabel("Cianose");
+        jPanel2.add(cbCianose);
+        cbCianose.setBounds(270, 260, 73, 20);
 
-        checkbox14.setLabel("Hematoma");
-        jPanel2.add(checkbox14);
-        checkbox14.setBounds(270, 290, 88, 20);
+        cbHematoma.setLabel("Hematoma");
+        jPanel2.add(cbHematoma);
+        cbHematoma.setBounds(270, 290, 88, 20);
 
-        checkbox15.setLabel("Vesicula");
-        jPanel2.add(checkbox15);
-        checkbox15.setBounds(270, 320, 73, 20);
+        cbVesicula.setLabel("Vesicula");
+        jPanel2.add(cbVesicula);
+        cbVesicula.setBounds(270, 320, 73, 20);
 
-        checkbox16.setLabel("Descamação");
-        jPanel2.add(checkbox16);
-        checkbox16.setBounds(270, 350, 100, 20);
+        cbDescamacao.setLabel("Descamação");
+        jPanel2.add(cbDescamacao);
+        cbDescamacao.setBounds(270, 350, 100, 20);
 
-        checkbox17.setLabel("Hirsutismo");
-        jPanel2.add(checkbox17);
-        checkbox17.setBounds(270, 380, 87, 20);
+        cbHirsutismo.setLabel("Hirsutismo");
+        jPanel2.add(cbHirsutismo);
+        cbHirsutismo.setBounds(270, 380, 87, 20);
 
-        checkbox18.setLabel("Hiperqueratose");
-        jPanel2.add(checkbox18);
-        checkbox18.setBounds(140, 380, 110, 20);
+        cbHiperqueratose.setLabel("Hiperqueratose");
+        jPanel2.add(cbHiperqueratose);
+        cbHiperqueratose.setBounds(140, 380, 110, 20);
 
-        checkbox19.setLabel("Foliculite");
-        jPanel2.add(checkbox19);
-        checkbox19.setBounds(410, 200, 75, 20);
+        cbFoliculite.setLabel("Foliculite");
+        jPanel2.add(cbFoliculite);
+        cbFoliculite.setBounds(410, 200, 75, 20);
 
-        checkbox20.setLabel("Angioma");
-        jPanel2.add(checkbox20);
-        checkbox20.setBounds(410, 230, 75, 20);
+        cbAngioma.setLabel("Angioma");
+        jPanel2.add(cbAngioma);
+        cbAngioma.setBounds(410, 230, 75, 20);
 
-        checkbox21.setLabel("Ceratose");
-        jPanel2.add(checkbox21);
-        checkbox21.setBounds(410, 260, 77, 20);
+        cbCeratose.setLabel("Ceratose");
+        jPanel2.add(cbCeratose);
+        cbCeratose.setBounds(410, 260, 77, 20);
 
-        checkbox22.setLabel("Nodulos");
-        jPanel2.add(checkbox22);
-        checkbox22.setBounds(410, 290, 73, 20);
+        cbNodulos.setLabel("Nodulos");
+        jPanel2.add(cbNodulos);
+        cbNodulos.setBounds(410, 290, 73, 20);
 
-        checkbox23.setLabel("Crosta");
-        jPanel2.add(checkbox23);
-        checkbox23.setBounds(410, 320, 63, 20);
+        cbCrosta.setLabel("Crosta");
+        jPanel2.add(cbCrosta);
+        cbCrosta.setBounds(410, 320, 63, 20);
 
-        checkbox24.setLabel("Escoriação");
-        jPanel2.add(checkbox24);
-        checkbox24.setBounds(410, 350, 88, 20);
+        cbEscoriacao.setLabel("Escoriação");
+        jPanel2.add(cbEscoriacao);
+        cbEscoriacao.setBounds(410, 350, 88, 20);
 
-        checkbox25.setLabel("Eczema");
-        jPanel2.add(checkbox25);
-        checkbox25.setBounds(410, 380, 70, 20);
+        cbEczema.setLabel("Eczema");
+        jPanel2.add(cbEczema);
+        cbEczema.setBounds(410, 380, 70, 20);
 
-        checkbox26.setLabel("Cicatriz");
-        jPanel2.add(checkbox26);
-        checkbox26.setBounds(520, 200, 66, 20);
+        cbCicatriz.setLabel("Cicatriz");
+        jPanel2.add(cbCicatriz);
+        cbCicatriz.setBounds(520, 200, 66, 20);
 
-        checkbox27.setLabel("Hipercromia");
-        jPanel2.add(checkbox27);
-        checkbox27.setBounds(520, 230, 94, 20);
+        cbHipercromia.setLabel("Hipercromia");
+        jPanel2.add(cbHipercromia);
+        cbHipercromia.setBounds(520, 230, 94, 20);
 
-        checkbox28.setLabel("Eritema");
-        jPanel2.add(checkbox28);
-        checkbox28.setBounds(520, 260, 69, 20);
+        cbEritema.setLabel("Eritema");
+        jPanel2.add(cbEritema);
+        cbEritema.setBounds(520, 260, 69, 20);
 
         checkbox29.setLabel("Papulas");
         jPanel2.add(checkbox29);
@@ -603,21 +596,58 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
 
         checkbox32.setLabel("Psoriase");
         jPanel2.add(checkbox32);
-        checkbox32.setBounds(520, 380, 76, 20);
+        checkbox32.setBounds(520, 140, 76, 20);
 
-        checkbox33.setLabel("Oleosidade");
-        jPanel2.add(checkbox33);
-        checkbox33.setBounds(30, 410, 90, 20);
+        cbOleosidade.setLabel("Oleosidade");
+        cbOleosidade.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                cbOleosidadeFocusLost(evt);
+            }
+        });
+        jPanel2.add(cbOleosidade);
+        cbOleosidade.setBounds(30, 140, 90, 20);
 
-        checkbox34.setLabel("Espessura");
-        jPanel2.add(checkbox34);
-        checkbox34.setBounds(140, 410, 87, 20);
+        cbFlacidez.setLabel("Flacidez");
+        jPanel2.add(cbFlacidez);
+        cbFlacidez.setBounds(410, 140, 87, 20);
 
         jButton1.setText("Avançar");
         jPanel2.add(jButton1);
-        jButton1.setBounds(590, 410, 73, 23);
+        jButton1.setBounds(570, 420, 73, 23);
 
-        jTabbedPane1.addTab("Avalição", jPanel2);
+        jLabel30.setText("Cor da Pele:");
+        jPanel2.add(jLabel30);
+        jLabel30.setBounds(30, 20, 70, 14);
+
+        jLabel33.setText("Aparencia Pele:");
+        jPanel2.add(jLabel33);
+        jLabel33.setBounds(220, 20, 80, 14);
+
+        jLabel34.setText("Biotipo Cultaneo:");
+        jPanel2.add(jLabel34);
+        jLabel34.setBounds(210, 60, 90, 14);
+
+        jLabel35.setText("Desidratação:");
+        jPanel2.add(jLabel35);
+        jLabel35.setBounds(20, 60, 90, 14);
+
+        jLabel36.setText("Superficies da Pele:");
+        jPanel2.add(jLabel36);
+        jLabel36.setBounds(430, 20, 94, 14);
+
+        jLabel37.setText("Pele com Acne:");
+        jPanel2.add(jLabel37);
+        jLabel37.setBounds(450, 60, 90, 14);
+
+        cbEspessura1.setLabel("Espessura");
+        jPanel2.add(cbEspessura1);
+        cbEspessura1.setBounds(140, 140, 87, 20);
+
+        cbLesoes1.setLabel("Lesões");
+        jPanel2.add(cbLesoes1);
+        cbLesoes1.setBounds(270, 140, 87, 20);
+
+        jTabbedPane1.addTab("Avaliação", jPanel2);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -651,27 +681,27 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jLabel24.setText("Coxa At:");
         jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, -1, -1));
 
-        textField1.addActionListener(new java.awt.event.ActionListener() {
+        txBraco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField1ActionPerformed(evt);
+                txBracoActionPerformed(evt);
             }
         });
-        jPanel3.add(textField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 90, -1));
-        jPanel3.add(textField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 90, -1));
-        jPanel3.add(textField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 90, -1));
-        jPanel3.add(textField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 90, -1));
-        jPanel3.add(textField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 100, -1));
+        jPanel3.add(txBraco, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 90, -1));
+        jPanel3.add(tfBusto, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 90, -1));
+        jPanel3.add(tfQuladril, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 90, -1));
+        jPanel3.add(tfPerna, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 90, -1));
+        jPanel3.add(tfEstomago, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 100, -1));
 
-        textField6.addActionListener(new java.awt.event.ActionListener() {
+        tfCintura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField6ActionPerformed(evt);
+                tfCinturaActionPerformed(evt);
             }
         });
-        jPanel3.add(textField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 100, -1));
-        jPanel3.add(textField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 100, -1));
-        jPanel3.add(textField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 100, -1));
-        jPanel3.add(textField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 100, -1));
-        jPanel3.add(textField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 100, -1));
+        jPanel3.add(tfCintura, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 100, -1));
+        jPanel3.add(tfAbdomem, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 100, -1));
+        jPanel3.add(tfCulote, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 100, -1));
+        jPanel3.add(tfCoxaBX, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 100, -1));
+        jPanel3.add(tfCoxaAt, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 100, -1));
 
         jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
         jPanel3.add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
@@ -679,20 +709,20 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jLabel25.setText("Grau:");
         jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
 
-        jRadioButton1.setText("Celulite:");
-        jPanel3.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        jrbCelulite.setText("Celulite:");
+        jPanel3.add(jrbCelulite, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
-        jRadioButton2.setText("Gordura Localizada");
-        jPanel3.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        jrbGorduraLoc.setText("Gordura Localizada");
+        jPanel3.add(jrbGorduraLoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
         jLabel26.setText("Local:");
         jPanel3.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
 
-        jRadioButton3.setText("Ptose");
-        jPanel3.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        jrbPtose.setText("Ptose");
+        jPanel3.add(jrbPtose, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
-        jRadioButton4.setText("Vibices");
-        jPanel3.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
+        jrbVibices.setText("Vibices");
+        jPanel3.add(jrbVibices, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
 
         jLabel27.setText("Local:");
         jPanel3.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, -1));
@@ -701,47 +731,47 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         jLabel28.setToolTipText("");
         jPanel3.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, -1, -1));
 
-        textField11.setText("textField11");
-        jPanel3.add(textField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 130, -1));
+        tfLocalGord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfLocalGordActionPerformed(evt);
+            }
+        });
+        jPanel3.add(tfLocalGord, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 130, -1));
+        jPanel3.add(tfLocalPtose, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 130, -1));
+        jPanel3.add(tfLocalVibices, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 130, -1));
 
-        textField12.setText("textField12");
-        jPanel3.add(textField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 130, -1));
-
-        textField13.setText("textField13");
-        jPanel3.add(textField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 130, -1));
-
-        jButton2.setText("Avançar");
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, -1, -1));
+        JbAvancarBiom.setText("Avançar");
+        jPanel3.add(JbAvancarBiom, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, -1, -1));
 
         jTabbedPane1.addTab("Biometria", jPanel3);
 
-        checkbox35.setLabel("Cardiaca");
+        cbCardiaca.setLabel("Cardiaca");
 
-        checkbox36.setLabel("Proteses");
+        cbProteses.setLabel("Proteses");
 
-        checkbox37.setLabel("Marcapasso");
+        cbMarcapasso.setLabel("Marcapasso");
 
-        checkbox38.setLabel("Vasculares");
+        cbVasculares.setLabel("Vasculares");
 
-        checkbox39.setLabel("Bronquite");
+        cbBronquite.setLabel("Bronquite");
 
-        checkbox40.setLabel("Eplepsia");
+        cbEplepsia.setLabel("Eplepsia");
 
-        checkbox41.setLabel("Reumaticas");
+        cbReumaticas.setLabel("Reumaticas");
 
-        checkbox42.setLabel("Alergicas");
+        cbAlergicas.setLabel("Alergicas");
 
-        checkbox43.setLabel("Oncologia");
+        cbOncologia.setLabel("Oncologia");
 
-        checkbox44.setLabel("Renais");
+        cbRenais.setLabel("Renais");
 
-        checkbox45.setLabel("DIU");
+        cbDIU.setLabel("DIU");
 
-        checkbox46.setLabel("Ginecologicas");
+        cbGinecologicas.setLabel("Ginecologicas");
 
-        checkbox47.setLabel("Glandulares");
+        cbGlandulares.setLabel("Glandulares");
 
-        checkbox48.setLabel("Gestante");
+        cbGestante.setLabel("Gestante");
 
         jLabel29.setText("Observações");
 
@@ -764,39 +794,39 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(checkbox35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(checkbox36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(checkbox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cbCardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cbProteses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cbMarcapasso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(checkbox39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkbox38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(cbBronquite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbVasculares, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(checkbox40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cbEplepsia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(43, 43, 43)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(checkbox41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cbReumaticas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbAlergicas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbOncologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(checkbox46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbGinecologicas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(checkbox44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkbox45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(cbRenais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbDIU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(60, 60, 60)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(checkbox48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkbox47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(cbGestante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbGlandulares, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 599, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -809,33 +839,33 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(checkbox35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox38, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkbox47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cbCardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbRenais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbReumaticas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbVasculares, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbGlandulares, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(40, 40, 40)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(checkbox39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkbox36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(cbBronquite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbProteses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(checkbox42, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkbox48, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addComponent(checkbox45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(cbAlergicas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbGestante, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addComponent(cbDIU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(checkbox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(checkbox40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(checkbox43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(checkbox46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbMarcapasso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbEplepsia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbOncologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbGinecologicas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
                 .addComponent(jLabel29)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
                 .addGap(8, 8, 8))
@@ -847,11 +877,15 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
 
         pack();
@@ -926,12 +960,12 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
 
     private void jbCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCadastrarActionPerformed
         this.cliente.setEndereco(this.endereco);
-        if(this.cliente.valida()){
+        if (this.cliente.valida()) {
             clienteControle.adicionar(this.cliente);
             limparCampos();
-        }else{
+        } else {
             StringBuilder mens = new StringBuilder();
-            for(String mensagem : this.cliente.obterMensagens()){
+            for (String mensagem : this.cliente.obterMensagens()) {
                 mens.append(mensagem);
                 mens.append("\n");
             }
@@ -952,13 +986,13 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
-    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
+    private void txBracoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txBracoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField1ActionPerformed
+    }//GEN-LAST:event_txBracoActionPerformed
 
-    private void textField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField6ActionPerformed
+    private void tfCinturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfCinturaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField6ActionPerformed
+    }//GEN-LAST:event_tfCinturaActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -980,76 +1014,90 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtNumeroActionPerformed
 
+    private void tfLocalGordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfLocalGordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfLocalGordActionPerformed
+
+    private void cbOleosidadeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cbOleosidadeFocusLost
+        if (cbOleosidade.getState()) {
+            this.avaliacao.setOleosidadePele(1);
+        } else {
+            this.avaliacao.setOleosidadePele(0);
+        }
+
+
+    }//GEN-LAST:event_cbOleosidadeFocusLost
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JbAvancarBiom;
+    private java.awt.Checkbox cbAlergicas;
+    private java.awt.Checkbox cbAngioma;
+    private java.awt.Checkbox cbAtrofia;
     private java.awt.Checkbox cbBolhas;
+    private java.awt.Checkbox cbBronquite;
+    private java.awt.Checkbox cbCardiaca;
+    private java.awt.Checkbox cbCeratose;
+    private java.awt.Checkbox cbCianose;
+    private java.awt.Checkbox cbCicatriz;
     private java.awt.Checkbox cbComedao;
     private java.awt.Checkbox cbCouperose;
+    private java.awt.Checkbox cbCroasma;
+    private java.awt.Checkbox cbCrosta;
+    private java.awt.Checkbox cbDIU;
+    private java.awt.Checkbox cbDescamacao;
     private java.awt.Checkbox cbDiscromia;
+    private java.awt.Checkbox cbEczema;
+    private java.awt.Checkbox cbEfelides;
+    private java.awt.Checkbox cbEplepsia;
+    private java.awt.Checkbox cbEritema;
+    private java.awt.Checkbox cbEscoriacao;
+    private java.awt.Checkbox cbEspessura1;
     private java.awt.Checkbox cbFisura;
+    private java.awt.Checkbox cbFlacidez;
+    private java.awt.Checkbox cbFoliculite;
+    private java.awt.Checkbox cbGestante;
+    private java.awt.Checkbox cbGinecologicas;
+    private java.awt.Checkbox cbGlandulares;
+    private java.awt.Checkbox cbHematoma;
+    private java.awt.Checkbox cbHipercromia;
+    private java.awt.Checkbox cbHiperqueratose;
+    private java.awt.Checkbox cbHipertricose;
+    private java.awt.Checkbox cbHipocromia;
+    private java.awt.Checkbox cbHirsutismo;
+    private java.awt.Checkbox cbLesoes1;
+    private java.awt.Checkbox cbMarcapasso;
     private java.awt.Checkbox cbMillium;
     private java.awt.Checkbox cbNecrose;
+    private java.awt.Checkbox cbNodulos;
+    private java.awt.Checkbox cbOleosidade;
+    private java.awt.Checkbox cbOncologia;
+    private java.awt.Checkbox cbPetequias;
+    private java.awt.Checkbox cbProteses;
+    private java.awt.Checkbox cbPustulas;
+    private java.awt.Checkbox cbRenais;
+    private java.awt.Checkbox cbReumaticas;
+    private java.awt.Checkbox cbRosacea;
     private java.awt.Checkbox cbRugas;
-    private java.awt.Checkbox checkbox1;
-    private java.awt.Checkbox checkbox10;
-    private java.awt.Checkbox checkbox11;
-    private java.awt.Checkbox checkbox12;
-    private java.awt.Checkbox checkbox13;
-    private java.awt.Checkbox checkbox14;
-    private java.awt.Checkbox checkbox15;
-    private java.awt.Checkbox checkbox16;
-    private java.awt.Checkbox checkbox17;
-    private java.awt.Checkbox checkbox18;
-    private java.awt.Checkbox checkbox19;
-    private java.awt.Checkbox checkbox2;
-    private java.awt.Checkbox checkbox20;
-    private java.awt.Checkbox checkbox21;
-    private java.awt.Checkbox checkbox22;
-    private java.awt.Checkbox checkbox23;
-    private java.awt.Checkbox checkbox24;
-    private java.awt.Checkbox checkbox25;
-    private java.awt.Checkbox checkbox26;
-    private java.awt.Checkbox checkbox27;
-    private java.awt.Checkbox checkbox28;
+    private java.awt.Checkbox cbSeborreia;
+    private java.awt.Checkbox cbTelangiectasia;
+    private java.awt.Checkbox cbUlceracao;
+    private java.awt.Checkbox cbVasculares;
+    private java.awt.Checkbox cbVesicula;
+    private java.awt.Checkbox cbXantelasma;
     private java.awt.Checkbox checkbox29;
-    private java.awt.Checkbox checkbox3;
     private java.awt.Checkbox checkbox30;
     private java.awt.Checkbox checkbox31;
     private java.awt.Checkbox checkbox32;
-    private java.awt.Checkbox checkbox33;
-    private java.awt.Checkbox checkbox34;
-    private java.awt.Checkbox checkbox35;
-    private java.awt.Checkbox checkbox36;
-    private java.awt.Checkbox checkbox37;
-    private java.awt.Checkbox checkbox38;
-    private java.awt.Checkbox checkbox39;
-    private java.awt.Checkbox checkbox4;
-    private java.awt.Checkbox checkbox40;
-    private java.awt.Checkbox checkbox41;
-    private java.awt.Checkbox checkbox42;
-    private java.awt.Checkbox checkbox43;
-    private java.awt.Checkbox checkbox44;
-    private java.awt.Checkbox checkbox45;
-    private java.awt.Checkbox checkbox46;
-    private java.awt.Checkbox checkbox47;
-    private java.awt.Checkbox checkbox48;
-    private java.awt.Checkbox checkbox5;
-    private java.awt.Checkbox checkbox6;
-    private java.awt.Checkbox checkbox7;
-    private java.awt.Checkbox checkbox8;
-    private java.awt.Checkbox checkbox9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox11;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1074,6 +1122,12 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1084,17 +1138,16 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JToolBar jToolBar1;
     private javax.swing.JButton jbCadastrar;
     private javax.swing.JButton jbCancelar;
     private javax.swing.JComboBox<String> jcCidade;
     private com.toedter.calendar.JDateChooser jdData;
+    private javax.swing.JRadioButton jrbCelulite;
+    private javax.swing.JRadioButton jrbGorduraLoc;
+    private javax.swing.JRadioButton jrbPtose;
+    private javax.swing.JRadioButton jrbVibices;
     private javax.swing.JTextField jtBairro;
     private javax.swing.JTextField jtCEP;
     private javax.swing.JTextField jtCPF;
@@ -1106,24 +1159,24 @@ public class jiCliente1 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jtNumero;
     private javax.swing.JTextField jtRG;
     private javax.swing.JTextField jtTelefone;
-    private java.awt.TextField textField1;
-    private java.awt.TextField textField10;
-    private java.awt.TextField textField11;
-    private java.awt.TextField textField12;
-    private java.awt.TextField textField13;
-    private java.awt.TextField textField2;
-    private java.awt.TextField textField3;
-    private java.awt.TextField textField4;
-    private java.awt.TextField textField5;
-    private java.awt.TextField textField6;
-    private java.awt.TextField textField7;
-    private java.awt.TextField textField8;
-    private java.awt.TextField textField9;
+    private java.awt.TextField tfAbdomem;
+    private java.awt.TextField tfBusto;
+    private java.awt.TextField tfCintura;
+    private java.awt.TextField tfCoxaAt;
+    private java.awt.TextField tfCoxaBX;
+    private java.awt.TextField tfCulote;
+    private java.awt.TextField tfEstomago;
+    private java.awt.TextField tfLocalGord;
+    private java.awt.TextField tfLocalPtose;
+    private java.awt.TextField tfLocalVibices;
+    private java.awt.TextField tfPerna;
+    private java.awt.TextField tfQuladril;
+    private java.awt.TextField txBraco;
     // End of variables declaration//GEN-END:variables
 
     private Cliente cliente = new Cliente();
     private Endereco endereco = new Endereco();
-    
+    private Avaliacao avaliacao = new Avaliacao();
 
     private ClienteControle clienteControle = new ClienteControle();
 

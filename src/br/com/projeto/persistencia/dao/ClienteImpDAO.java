@@ -16,7 +16,7 @@ import java.util.List;
 public class ClienteImpDAO extends BaseImpDAO implements BaseDAO<Cliente> {
 
     private static final String INSERT = "insert into Cliente(nome, cpf, rg, dataNascimento,email, Telefone, Celular) values(?,?,?,?,?,?,?)";
-    private static final String UPDATE = "UPDATE CLIENTE SET nome= ?,  cpf = ?, rg = ?, dataNascimento = ?, email = ? , Telefone = ?,  Celular = ? where id =  ?";
+        private static final String UPDATE = "UPDATE CLIENTE SET nome= ?,  cpf = ?, rg = ?, dataNascimento = ?, email = ? , Telefone = ?,  Celular = ? where id =  ?";
     private static final String SELECT = "SELECT * FROM CLIENTE";
     private static final String SELECT_ALL =  "SELECT CLIENTE.*, ENDERECO.*, BIOMETRIA.*, CLIENTEALTERACOES.* FROM CLIENTE \n" +
 "	LEFT JOIN ENDERECO \n" +
